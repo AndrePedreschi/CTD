@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto:wght@500&display=swap');
+
+body{
+background-color: #131313;
+
+}
+
+
+
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.media-picture{
+    background-image: url('https://s2.glbimg.com/2C0hMRuCY_7NfDPjby4_Bjmq8Nc=/e.glbimg.com/og/ed/f/original/2018/03/22/avengers-infinity-war-official-poster-2018-4o.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+    height: 400px;
+
+    
+}
+
+.review-score{
+    background-color: #e6bd09;
+    color: white;
+    padding: 12px;
+}
+
+h2{
+
+    color: steelblue;
+}
+
+p{
+    color: #bdbdbd;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    color: yellow;
+}
+

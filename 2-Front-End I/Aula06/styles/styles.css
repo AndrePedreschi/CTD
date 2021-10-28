@@ -1,0 +1,31 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+
+}
+main {
+    background-color: hsl(147, 33%, 53%);
+    height: 400px;
+
+
+}
+
+
+
+article {
+    background-image: url('https://a.cdn-hotels.com/gdcs/production169/d636/03254867-7781-42d4-84f3-aca7aed4bdaa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    
+
+
+
+}

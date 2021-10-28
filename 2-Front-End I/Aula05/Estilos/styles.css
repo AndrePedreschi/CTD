@@ -1,0 +1,38 @@
+/* *{
+color: darkgreen;
+
+} */
+body {
+background-color: greenyellow;
+
+}
+
+.main-title{
+    
+    color: #e72962ad;
+    font-size: 50px;
+
+}    
+.sub-title {color: #34cacad2;}
+
+.main-title2{color: #38a52a;}
+.sub-title2{color: #6495ed;}
+
+.post {
+background-color: darkgoldenrod;
+
+
+}
+
+
+#subPostTitle{
+color: firebrick;
+font-size: 10px;
+
+}
+
+.post2 h1,{
+
+    color: #ffd700;
+}
+
