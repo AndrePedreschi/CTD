@@ -1,0 +1,86 @@
+clone de git
+
+
+Major@Major-PC MINGW64 ~
+$ cd desktop
+
+Major@Major-PC MINGW64 ~/desktop
+$ cd Curso_DH
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH
+$ cd 'Introdução a Informática'
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática
+$ git clone https://github.com/AndrePedreschi/MochilaViajante.git
+Cloning into 'MochilaViajante'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06
+$ cd MochilaViajante
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante (main)
+$ git branch Andre_Pedreschi
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante (main)
+$ git checkout Andre_Pedreschi
+Switched to branch 'Andre_Pedreschi'
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante (Andre_Pedreschi)
+$ mkdir Git_e_Github_Andre_Pedreschi
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante (Andre_Pedreschi)
+$ cd Git_e_Github_Andre_Pedreschi
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante/Git_e_Github_Andre_Pedreschi (Andre_Pedreschi)
+$ touch historia_Github_Andre_Pedreschi.txt
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante/Git_e_Github_Andre_Pedreschi (Andre_Pedreschi)
+$ git add .
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante/Git_e_Github_Andre_Pedreschi (Andre_Pedreschi)
+$ git status
+On branch Andre_Pedreschi
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   historia_Github_Andre_Pedreschi.txt
+
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante/Git_e_Github_Andre_Pedreschi (Andre_Pedreschi)
+$ git commit -m "Adicionei um novo arquivo com perguntas"
+[Andre_Pedreschi c17c683] Adicionei um novo arquivo com perguntas
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Git_e_Github_Andre_Pedreschi/historia_Github_Andre_Pedreschi.txt
+
+Major@Major-PC MINGW64 ~/desktop/Curso_DH/Introdução a Informática/Aula06/MochilaViajante/Git_e_Github_Andre_Pedreschi (Andre_Pedreschi)
+$ git push origin Andre_Pedreschi
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 524 bytes | 174.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Andre_Pedreschi' on GitHub by visiting:
+remote:      https://github.com/AndrePedreschi/MochilaViajante/pull/new/Andre_Pedreschi
+remote:
+To https://github.com/AndrePedreschi/MochilaViajante.git
+ * [new branch]      Andre_Pedreschi -> Andre_Pedreschi
+
+
+
+
+
+
+
+

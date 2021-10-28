@@ -1,0 +1,96 @@
+Major@Major-PC MINGW64 ~/desktop
+$ mkdir RAIZ
+
+Major@Major-PC MINGW64 ~/desktop
+$ cd RAIZ
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ ls
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ mkdir pasta01 pasta02 pasta03
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ ls
+pasta01/  pasta02/  pasta03/
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ cd pasta01
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ ls
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ touch arquivo01.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ ls
+arquivo01.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ mv arquivo01 ../
+mv: cannot stat 'arquivo01': No such file or directory
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ ls
+arquivo01.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ mv arquivo01.txt ../
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ cd ..
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ ls
+arquivo01.txt  pasta01/  pasta02/  pasta03/
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ mv arquivo01.txt pasta02
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ cd pasta02
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta02
+$ ls
+arquivo01.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta02
+$ rm arquivo01.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta02
+$ ls
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta02
+$ cd ../
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ cd pasta03
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta03
+$ ls
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta03
+$ touch arquivo03.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta03
+$ ls
+arquivo03.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta03
+$ mv arquivo03.txt ../
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta03
+$ cd ../
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ mv arquivo03.txt pasta01
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ
+$ cd pasta01
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$ rm arquivo03.txt
+
+Major@Major-PC MINGW64 ~/desktop/RAIZ/pasta01
+$

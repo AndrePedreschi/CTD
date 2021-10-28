@@ -1,0 +1,21 @@
+mkdir intepwd   - local aonde está
+
+clear 
+LS - List
+(Cria pasta) - mkdir CursoDH/Aula01
+ 
+(modifica ou move a pasta) mv curso_DH Cursos (Vai mover a pasta para a do segundo nome se ela já existir, caso não exista ela vai renomear a primeira pasta com o segundo nome)
+
+(entra na pasta) cd 
+
+
+(deleta a pasta, mas somente se estiver vazia) rmdir
+(deleta arquivos) rm
+( ) rmdir --help
+
+
+(cria arquivo)touch Pepe.txt
+
+../ (indica um nível a cima)
+
+../../../ (indica 3 níveis a cima)

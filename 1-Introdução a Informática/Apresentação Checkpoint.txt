@@ -1,0 +1,18 @@
+Vantagens:
+
+- Organizar os projetos
+- Acompanhar o histórico das atividades desenvolvidas
+- Pode criar várias "linhas do tempo" (branchs) a linha principal (main) do projeto
+- Recuperar versões anteriores
+- Várias pessoas podem trabalhar paralelamente
+- Unir as alterações em um único arquivo
+
+
+
+
+Marc Izhu
+
+Perfil com jogo de xadrez programado em python 
+Para fazer isso a pessoa cria um repositório com o mesmo nome do perfil,
+e com um arquivo "readme", dessa forma esse arquivo e o repositório já vão ficar vinculados
+ 

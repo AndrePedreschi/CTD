@@ -1,0 +1,6 @@
+Exercício: Conhecendo meus Endereços
+IP Público: 189.31.55.123 (Classe B)
+IP Privado: IPv4: 192.127.9.741 (classe C)
+Máscara de Sub-rede : 255.255.255.0
+MAC - Endereço Físico: J6-9C-D9-L5-Z4-S1 (Placa de rede: Dell Inc.)
+

@@ -1,0 +1,54 @@
+1 - git init // 
+2 - git branch -m main // muda o nome do branch 
+3 - git remote add origin //
+
+ls -a //
+
+//Exemplo de linkar uma pasta do pc no github
+
+Major@Major-PC MINGW64 ~/desktop
+$ cd Aula05Turma11
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11 (main)
+$ mkdir pastonha
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11 (main)
+$ cd pastonha
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11/pastonha (main)
+$ touch arquivo.txt
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11/pastonha (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11/pastonha (main)
+$ git add .
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11/pastonha (main)
+$ git commit -m "criei uma nova pasta com o arquivo dentro"
+[main d070de8] criei uma nova pasta com o arquivo dentro
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pastonha/arquivo.txt
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11/pastonha (main)
+$ git config --global user.name AndrePedreschi
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11/pastonha (main)
+$ git config --global user.email a.pedreschi32@gmail.com
+
+Major@Major-PC MINGW64 ~/desktop/Aula05Turma11/pastonha (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 358 bytes | 179.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AndrePedreschi/Aula05Turma11.git
+   ad55a6e..d070de8  main -> main
+
+
+
+

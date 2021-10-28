@@ -1,0 +1,91 @@
+
+Major@Major-PC MINGW64 ~
+$ cd desktop
+
+Major@Major-PC MINGW64 ~/desktop
+$ mkdir projeto
+
+Major@Major-PC MINGW64 ~/desktop
+$ cd projeto
+
+Major@Major-PC MINGW64 ~/desktop/projeto
+$ touch text1.txt text2.txt
+
+Major@Major-PC MINGW64 ~/desktop/projeto
+$ git init
+Initialized empty Git repository in C:/Users/Major/Desktop/projeto/.git/
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git add .
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text1.txt
+        new file:   text2.txt
+
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git commit -m
+error: switch `m' requires a value
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git commit -m "Criei dois arquivos"
+[master (root-commit) db54a67] Criei dois arquivos
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text1.txt
+ create mode 100644 text2.txt
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ vi text.txt
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ vi text2.txt
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   text2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ vi text1.txt
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ rm text.txt
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   text1.txt
+        modified:   text2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git add .
+warning: LF will be replaced by CRLF in text1.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in text2.txt.
+The file will have its original line endings in your working directory
+
+Major@Major-PC MINGW64 ~/desktop/projeto (master)
+$ git commit -m "Alterações nos arquivos de texto realizadas"
+[master 9052ad5] Alterações nos arquivos de texto realizadas
+ 2 files changed, 3 insertions(+)
