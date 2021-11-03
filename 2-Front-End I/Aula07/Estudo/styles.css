@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(231, 202, 202);
+}
+
+div h1{
+    border: double 10px black;
+    
+}
+
+.T1{
+    background-color: aqua;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    border: dashed 5px black;
+    margin: 0px 1130px 0px 0px ;
+    
+}
+
+.Paragrafo{
+    color: rosybrown;
+    background-color: blueviolet;
+    padding: 10px 15px 20px 30px;
+    border: dotted 5px red;
+}
