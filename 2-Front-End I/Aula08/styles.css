@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+    background-color: blue;
+}
+header{
+    background-color: aquamarine;
+    padding: 12px 32px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 12px;
+    
+
+}
+
+.first-square {
+    background-color: rgb(255, 115, 0);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 12px;
+    
+
+
+}
+
+.second-square {
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    top: 200px;
+    left: 40px;
+
+}
+
+.third-square {
+    
+    background-color: rgb(145, 255, 0);
+    position: fixed;
+
+}
+
+
+
+
+
+
+
+
+
