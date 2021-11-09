@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sacramento&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Sacramento', cursive; */
+
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#pricipal{
+    text-align: center;
+}
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5c/Foto_a%C3%A9rea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.video{
+    width: 1280px;
+    height: 720px;
+    display: block;
+    margin: 24px auto; 
+}
+#cabecalho {
+text-align: center;
+padding: 15px 0px;
+background-color: burlywood;
+
+
+}
+#titulo{
+    font-family: 'Sacramento', cursive;
+}
+
+.video{
+    margin: 0px auto;
+
+    
+}
+
+
+
+

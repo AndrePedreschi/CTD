@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    background-color: yellow;
+    background-size: auto;
+    padding: 12px 20px;
+    
+}
+
+.banner{
+    
+}
+
+
+
+.icon{
+    height: 10px;
+    width: 60px;
+    
+
+
+}
+
+
