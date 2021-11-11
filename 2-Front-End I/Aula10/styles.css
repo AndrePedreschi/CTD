@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: cadetblue;
+}
+
+form{
+    padding: 24px;
+    background-color: beige;
+    width: 350px;
+    margin: 0 auto;
+}
+
+label, {
+    margin-top: 24px;
+
+}
+
+button{
+    margin-top: 10px;
+
+}
+
+label, input, button{
+    display: block;
+}
+

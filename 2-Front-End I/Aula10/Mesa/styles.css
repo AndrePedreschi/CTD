@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Emblema-650x366.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+    height: 400px;
+}
+
+form{
+    background-color: white;
+
+}
+
+label{
+    margin-top: 25px;
+
+}
+button{
+    margin-top: 10px;
+
+}
+label, input, button{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
