@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive; */
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    background-color: rgb(15, 182, 43);
+    text-align: center;
 
+}
 body{
     background-image: url("https://logosmarcas.net/wp-content/uploads/2020/09/Starbucks-Emblema-650x366.png");
     background-repeat: no-repeat;
@@ -14,6 +28,7 @@ body{
 
 form{
     background-color: white;
+    font-family: 'Courgette', cursive
 
 }
 
