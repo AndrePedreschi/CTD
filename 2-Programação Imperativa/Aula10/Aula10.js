@@ -28,7 +28,7 @@ console.log(lista);
 let strlista = lista.join("-");
 console.log(strlista);
 
-lista.push("André");
+lista.push("André");//Adiciona no final
 console.log(lista);
 console.log(lista.lastIndexOf("André"));
 console.log(lista.indexOf("André"));
