@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+
+        <form>
+
+            <h1>Cadastro de Usuários</h1>
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <div>
+                    <label for="username">Usuário</label>
+                    <input type="text" name="username" id="username">   
+                </div>
+                
+                <div>
+                    <label for="emailUsername">E-mail</label>
+                    <input type="email" name="emailUsername" id="emailUsername">
+                </div>
+                
+
+                <div>
+                    <label for="birthDate">Data de Nascimento</label>
+                    <input type="date" name="birthDate" id="birthDate" min="2018-01-01" max="2024-10-05">
+                </div>
+
+                <div>
+                    <label for="passwordUser">Password</label>
+                    <input type="password" name="passwordUser" id="passwordUser">
+                </div>
+                
+                <div>
+                    <label for="observations">Observações</label>
+                    <textarea name="observations" id="observations" cols="30" rows="10"></textarea>
+                </div>
+                
+                <div>
+                    <input type="radio" name="person" id="pf" value="pessoaFisica" checked>
+                    <label for="pf">Pessoa Física</label>
+                    <input type="radio" name="person" id="pj" value="pessoaJuridica">
+                    <label for="pj">Pessoa Jurídica</label>
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Localização</legend>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep">
+                </div>
+                <div>
+                    <label for="rua">Rua</label>
+                    <input type="text" name="rua" id="rua">
+                </div>
+                <div>
+                    <label for="Bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro">
+                </div>
+
+                
+                
+
+                <label for="state">Cidade</label>
+                <select name="city" id="city">
+                    <option disabled selected value="">Cicade</option>
+                    <optgroup label="São Paulo">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </optgroup>
+                    <optgroup label="Rio de Janeiro">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </optgroup>
+                    <optgroup label="Minas Gerais">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </optgroup>
+                
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados financeiros</legend>
+
+                
+
+                <input type="checkbox" name="option" id="firstOption" value="1">
+                <label for="firstOption">Opção 1</label>
+                <input type="checkbox" name="option" id="secondOption" value="1">
+                <label for="secondOption">Opção 2</label>
+                <input type="checkbox" name="option" id="thirdOption" value="1">
+                <label for="thirdOption">Opção 3</label>
+                
+            </fieldset>
+
+            <div>
+                <button type="reset">Limpar Formulário</button>
+                <button type="submit">Enviar Formulário</button>
+            </div>
+        </form>
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
