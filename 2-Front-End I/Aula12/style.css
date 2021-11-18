@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline: 0;
+
+}
+
+body{
+    padding: 32px;
+
+}
+
+label{
+    font-size: 16px;
+}
+
+.perso-input{
+    background-color: rgb(194, 194, 194);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-left: 12px;
+    transition: .4s;
+    
+}
+.perso-input:hover{
+    margin-left: 0px;
+}
+
+
+.perso-checkbox{
+    width: 15px;
+    height: 15px;
+    transition: 1s;
+}
+
+.perso-checkbox:checked{
+    width: 25px;
+    height: 25px;
+}
+
+input:focus{
+    background-color: rgb(230, 217, 217);
+    width: 200px;
+}
+
+.main-button{
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    background-color: #32cc72;
+    border-radius: 12px;
+    transition: .4s;
+}
+
+.main-button:hover{
+    background-color: #b2eecb;
+    border-radius: 32px;
+}
+
+.main-menu li {
+    color: white;
+    background-color: tomato;
+    padding: 12px;
+    width: fit-content;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* .main-menu li:nth-child(odd){
+    background-color: turquoise;
+} */
+/* .main-menu li:nth-child(even){
+    background-color: turquoise;
+} */
+.main-menu li:nth-child(3n+1){
+    background-color: turquoise;
+}
+
+.rocket-tittle::before{
+    content: '🚀';
+    display: inline-block;
+}
+
+.linkedin::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url('https://expertdigital.net/wp-content/uploads/2018/11/linkedin-logo.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.linkedin::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url('https://expertdigital.net/wp-content/uploads/2018/11/linkedin-logo.png');
+    background-position: center;
+    background-size: contain;
+}
+
+
+p::first-letter{
+    font-size: 32px;
+}
+
+
+p::first-line{
+    background-color: yellow;
+
+}
+
