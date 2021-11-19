@@ -118,7 +118,7 @@ function listaFilme (lista1, lista2){
     lista2.pop()
     return lista1.concat(lista2)
 }
-console.log(listaFilme(filmes, filmesAnimacao));
+//console.log(listaFilme(filmes, filmesAnimacao));
 
 
 //5.Finalmente, recebemos dois arrays com classificações feitas por diferentes usuários do mundo nos filmes com o seguinte formato:
@@ -129,7 +129,20 @@ const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
 //Para verificar se tudo está bem até agora, recomendamos testar cada uma das funções, a fim de verificar seu correto funcionamento.
 //Se chegarmos a este ponto e tudo estiver bem, o tech leader da equipe deve estar extremamente feliz com nosso trabalho e desempenho.
 
-
+function compAsiaeuro (array1, array2){
+    let resultado = [];
+    resultado[0] = array1[0] === array2[0];
+    resultado[1] = array1[1] === array2[1];
+    resultado[2] = array1[2] === array2[2];
+    resultado[3] = array1[3] === array2[3];
+    resultado[4] = array1[4] === array2[4];
+    resultado[5] = array1[5] === array2[5];
+    resultado[6] = array1[6] === array2[6];
+    resultado[7] = array1[7] === array2[7];
+    resultado[8] = array1[8] === array2[8];
+    return resultado
+}
+//console.log(compAsiaeuro(asiaScores,euroScores));
 
 
 
