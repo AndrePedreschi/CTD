@@ -90,14 +90,7 @@ fieldset{
 label, select, textarea, input, h3{
     display: block;
     margin: 10px;
-    font-family: 'Roboto', sans-serif;
     
-}
-
-label::first-letter{
-    font-family: 'Comforter Brush', cursive;
-    font-size: 20px;
-
 }
 
 button{
@@ -106,35 +99,6 @@ button{
     display: inline-block;
     padding: 10px;
     border-radius: 12px;
-    margin: 0 100px;
+    margin: 100px;
 }
 
-.submit:hover{
-    background-color: yellowgreen;
-}
-
-.reset:hover{
-    background-color: rgb(212, 30, 30);
-    
-}
-.local:focus{
-    background-color: rgb(233, 233, 233);
-}
-
-
-.moto:checked{
-width: 30px;
-height: 30px;
-
-}
-
-select:enabled{
-    width: 100px;
-}
-
-optgroup:disabled{
-    background: rgb(71, 255, 255);
-}
-option:nth-child(2n+0){
-    background: tomato;
-}
