@@ -3,7 +3,7 @@ const bob = [12, 67, 43];
 
 
 
-function encontraGanhador (a,b){
+function encontraGanhador(a, b) {
     let pontosPrimeiroParticipante = 0;
     let pontosSegundoParticipante = 0;
 
@@ -18,9 +18,9 @@ function encontraGanhador (a,b){
     console.log(pontosPrimeiroParticipante);
     console.log(pontosSegundoParticipante);
 
-    if (pontosPrimeiroParticipante>pontosSegundoParticipante) {
+    if (pontosPrimeiroParticipante > pontosSegundoParticipante) {
         return "Alicia"
-    }else{
+    } else {
         return "Bob"
     }
 
@@ -28,15 +28,15 @@ function encontraGanhador (a,b){
 //console.log("O vencedor é: "+ encontraGanhador(alicia,bob));
 
 
-function digitalHouse (num1, num2){
+function digitalHouse(num1, num2) {
 
-    for(let j=1; j<=100; j++){
-        if (j%num1==0 & j%num2==0) {
-            console.log("O número "+j+" é Digital House")
-        }else if (j%num1==0) {
-            console.log("O número "+j+" é Digital");
-        }else if(j%num2==0){
-            console.log("O número "+j+" é House");
+    for (let j = 1; j <= 100; j++) {
+        if (j % num1 == 0 & j % num2 == 0) {
+            console.log("O número " + j + " é Digital House")
+        } else if (j % num1 == 0) {
+            console.log("O número " + j + " é Digital");
+        } else if (j % num2 == 0) {
+            console.log("O número " + j + " é House");
         }
 
     }
