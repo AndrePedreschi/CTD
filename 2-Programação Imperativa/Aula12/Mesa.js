@@ -45,6 +45,23 @@ function digitalHouse(num1, num2) {
 //console.log(digitalHouse(1,7));
 
 
+function somaArray(arrayX){
+    let soma=0;
+for(let c=0; c<arrayX.length; c++){
+    soma=soma+arrayX[c];
+}
+return soma
+}
+
+//console.log(somaArray([-5,100]));
 
 
 
+function join(arrayJ){
+        let soma="";
+    for(let c=0; c<arrayJ.length; c++){
+       soma=soma+arrayJ[c];
+    }
+    return soma
+}
+console.log(join(["o","l","a"]));

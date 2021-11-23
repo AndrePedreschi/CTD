@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    padding:64px 32px;
+}
+
+.main-button{
+    border: none;
+    padding: 24px;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(75, 75, 206);
+    border-radius: 12px;
+    transition: 1s ease-in-out .5s;
+    /* transition: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;*/
+}
+
+.main-button:hover{
+    /* filter: invert(); */
+    background-color: rgb(117, 117, 235);
+    transform: scale(1.08) skew(-9deg) rotate(360deg) translate(10px, 50px);
+    /* padding: 64px; vai aumentar empurrando o texto para baixo */
+    /* transform: scale(1.08) translate(10px, 10px); */
+}
+
+
+p{
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+@keyframes floating{
+    /* from{
+        transform: translate(0, -30px);
+        opacity: .5;
+    }
+
+    to{
+        transform: translate(0, 30px);
+        opacity: 1;
+    } */
+    0%{
+        transform: translate(0, -30px);
+        opacity: .5;
+    }
+    50%{
+        transform: translate(0, 30px);
+        opacity: 1;
+    }
+    75%{
+        transform: translate(0, -30px) rotate(360deg);
+        
+    }
+    100%{
+        transform: translate(0, -30px);
+        opacity: .5;
+    }
+}
+
+
+.ghost{
+    display: block;
+    font-size: 200px;
+    text-align: center;
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
