@@ -1,17 +1,50 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'main-header main-header'
+    'main-aside main-content'
+    'main-footer main-footer';
+}
 
+
+header{
+    background-color: rgb(165, 42, 42);
+    grid-area: main-header;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+aside{
+    background-color: chartreuse;
+    grid-area: main-aside;
+    
+    /* padding: 80px; usamos se queremos queremos o header transparente */
+    margin-top: 80px;
+}
+
+main{
+    background-color: cornflowerblue;
+    grid-area: main-content;
+    margin-top: 80px;
+}
+main h1{
+    margin: 10px;
+}
 ul{
     /* height: 400px;
     align-items: center; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color: black;
+    
     list-style: none;
     display: flex;
     gap: 24px;
@@ -47,7 +80,7 @@ ul a{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin-top: 87px;
+    
     /* margin-left: 50px; */
     justify-content: center;
 
@@ -56,3 +89,16 @@ ul a{
 .video:hover{
     transform: scale(1.05);
 }
+footer{
+    background-color: darkgrey;
+    grid-area: main-footer;
+    height: 200px;
+}
+
+
+
+
+
+
+
+

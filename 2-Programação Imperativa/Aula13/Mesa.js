@@ -48,3 +48,22 @@ let banco = {
 //console.log(banco.saque('Abigael Natte',200229));
 
 
+//Exercício Bônus - Propriedade Única
+
+
+
+
+function propriedadesUnica(nome,idade) {
+    this.nome=nome;
+    this.idade=idade;       
+}
+
+let array = [ { nome: "Lean", idade: 27 }, { nome: "Eze", idade: 49} ];
+// console.log(array[0].idade);
+
+let teste=[];
+
+teste.push(new propriedadesUnica(array[0].nome), new propriedadesUnica(array[0].idade), new propriedadesUnica(array[1].nome), new propriedadesUnica(array[1].idade));
+console.log(propriedadesUnica.nome);
+// console.log(propriedadesUnica.nome);
+// console.log(propriedadesUnica.idade);

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+nav{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+
+}
+
+.videos{
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+justify-content: center;
+margin-top: 101px;
+
+
+
+}
+.video{
+    width: 400px;
+    transition: 0.3s ease-in-out;
+    color: blanchedalmond;
+}
+
+.video img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border:3px solid white;
+}
+
+.video:hover{
+    transform: scale(1.05);
+    
+}
+
+.video img:hover{
+    border:3px solid rgb(255, 0, 0);
+}
+
+

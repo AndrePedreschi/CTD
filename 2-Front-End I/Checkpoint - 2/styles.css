@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500,700&family=Roboto:ital@0;1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-image: url('Assets/asd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  padding-left: 10px;
+  color: white;
+}
+
+nav > div > ul > li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding: 10px;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: all ease 0.3s;
+}
+
+.link:hover {
+  background-color: rgba(153, 153, 153, 0.3);
+}
+
+main {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.video {
+  width: 100%;
+  height: 720px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.curiosidades > li {
+  border-right: 1px solid white;
+  text-align: justify;
+}
+
+.curiosidades > li:last-child {
+  border-right: transparent;
+}
+
+.redes > a > img {
+  width: 50px;
+}
+
