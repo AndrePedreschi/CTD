@@ -1,39 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500,700&family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&family=Roboto:ital@0;1&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+  outline: 0;
 }
+
 body {
-  background-image: url('Assets/asd.jpg');
-  background-size: cover;
+  background-image: url("Assets/asd.jpg");
+  background-position: center;
+  background-position-x: left;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
-  
 }
 
-form{
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.1);
+    opacity: 0%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+
+form {
+  animation-name: appear;
+  animation-duration: 2.3s;
+  background-color: rgba(0, 0, 0, 0.54);
   flex-direction: column;
   justify-content: center;
-  width: fit-content;
-  padding:25px;
-  margin: 25px auto;
+  width: 60%;
+  padding: 15px 30px;
   border-radius: 10px;
-  
-
 }
-form h1, h2, label{
+
+form h1,
+label {
   color: white;
 }
 
-form div{
-  margin: 5px;
+h2 {
+  color: white;
+  margin-bottom: 15px;
 }
 
+form div {
+  margin: 5px;
+}
 
 nav {
   background-color: rgba(0, 0, 0, 0.3);
@@ -42,6 +64,7 @@ nav {
   padding: 15px 0px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-bottom: 50px;
 }
 
 nav > p {
@@ -65,14 +88,109 @@ ul {
 li {
   padding: 10px;
   list-style: none;
-  color: white;
 }
 
-.button{
-  display: flex;
-  gap: 15px ;
-  width: 200px;
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: all ease 0.3s;
+}
+
+.link:hover {
+  background-color: rgba(153, 153, 153, 0.3);
+}
+
+.alignflex {
   display: flex;
   margin: 0 auto;
+  gap: 15px;
+}
 
+.btn {
+  margin-top: 25px;
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.btn-reset {
+  background-color: burlywood;
+  transition: 0.4s;
+}
+
+.btn-reset:hover {
+  background-color: rgb(224, 212, 195);
+}
+
+.btn-submit {
+  background-color: cornflowerblue;
+  transition: 0.4s;
+}
+
+.btn-submit:hover {
+  background-color: rgb(157, 181, 226);
+}
+
+.box {
+  width: 20rem;
+  height: 30px;
+  border: 0;
+  border-radius: 6px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+}
+
+.box-data {
+  height: 30px;
+  width: auto;
+  border: 0;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.radio {
+  margin-top: 20px;
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+}
+
+.radio:checked {
+  width: 20px;
+  height: 20px;
+  transition: 0.6s;
+}
+
+.font {
+  font-size: 1.4rem;
+}
+
+.animate-box {
+  transition: 0.6s;
+}
+
+.animate-box:hover {
+  transform: scale(1.2);
+  margin-left: 2.8rem;
+}
+
+.animate-box:focus {
+  transform: scale(1.26);
+  margin-left: 2.8rem;
+}
+
+.box-option {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  width: 150px;
+  height: 30px;
+  border: 0;
+  border-radius: 6px;
+  padding-left: 10px;
+  margin-bottom: 6px;
 }

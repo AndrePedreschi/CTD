@@ -1,104 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" src="style.css" />
+    <link rel="stylesheet" href="stylesContato.css" />
+    <title>Checkpoint 2</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./stylesContato.css">
-</head>
-
-<body>
+  <body class="container">
     <header>
-        <nav>
-          <p>Rio de Janeiro</p>
-          <div>
-            <ul>
-              <li><a class="link" href="./Index.html">Home</a></li>
-              <li><a class="link" href="">Passeios</a></li>
-              <li><a class="link" href="./contatos.html">Contato</a></li>
-            </ul>
-          </div>
-        </nav>
+      <nav>
+        <p>Agência de Turismo</p>
+        <div>
+          <ul>
+            <li><a class="link" href="./index.html">Home</a></li>
+            <li><a class="link" href="">Passeios</a></li>
+            <li><a class="link" href="./contatos.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
+    <form class="alignflex">
+      <h1>Formulário</h1>
+      <h2>Dados de Contato</h2>
 
-    <form>
+      <div>
+        <label for="name">Nome</label>
+        <input
+          class="box animate-box"
+          type="text"
+          name="name"
+          id="name"
+          required
+        />
+      </div>
 
-        <h1>Formulário</h1>
-        <h2>Dados de Contato</h2>
+      <div>
+        <label for="email">E-mail</label>
+        <input
+          class="box animate-box"
+          type="email"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
 
-        <div>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" required>
-        </div>
+      <div>
+        <label for="phone">Telefone</label>
+        <input
+          class="box animate-box"
+          type="tel"
+          id="phone"
+          name="telefone"
+          pattern="[0-9]{2}[0-9]{9}"
+          required
+          placeholder="(DDD) 9 XXXX-XXXX"
+        />
+      </div>
 
-        <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
-        </div>
+      <div>
+        <label for="data">Data de Nascimento</label>
+        <input class="box-data animate-box" type="date" class="data" required />
+      </div>
 
-        <div>
-            <label for="phone">Telefone</label>
-            <input type="tel" id="phone" name="telefone" pattern="[0-9]{2}[0-9]{9}" required
-                placeholder="(DDD) 9 XXXX-XXXX">
-        </div>
+      <div>
+        <h1>Maior ou menor de idade?</h1>
+        <input
+          class="radio"
+          type="radio"
+          name="person"
+          id="maiorIdade"
+          value="maiorIdade"
+          checked
+        />
+        <label class="font" for="maiorIdade">Maior</label>
+        <input
+          class="radio"
+          type="radio"
+          name="person"
+          id="menorIdade"
+          value="maiorIdade"
+        />
+        <label class="font" for="menorIdade">Menor</label>
+      </div>
 
-        <div>
-            <label for="data">Data de Nascimento</label>
-            <input type="date" class="data" required>
-        </div>
+      <div>
+        <label class="font" for="interesse"
+          >Escolha um ponto de interesse do Rio de Janeiro</label
+        >
+        <select class="box-option" name="interesse" id="interesse" required>
+          <option disabled selected value="">Atração</option>
+          <option value="1">Cristo Redentor</option>
+          <option value="2">Pão de Açúcar</option>
+          <option value="3">Praia de Copacabana</option>
+          <option value="4">Praia de Ipanema</option>
+          <option value="5">Praia da Barra da Tijuca</option>
+          <option value="6">Praia do Leblon</option>
+          <option value="7">Jardim Botânico</option>
+          <option value="8">Maracanã</option>
+          <option value="9">Corcovado</option>
+          <option value="10">Sambódromo</option>
+        </select>
+      </div>
 
-        <div>
-            <h1>Maior ou menor de idade?</h1>
-            <input type="radio" name="person" id="maiorIdade" value="maiorIdade" checked>
-            <label for="maiorIdade">Maior</label>
-            <input type="radio" name="person" id="menorIdade" value="maiorIdade">
-            <label for="menorIdade">Menor</label>
-        </div>
-       
-
-        <div>
-            <label for="interesse">Escolha um ponto de interesse do Rio de Janeiro</label>
-            <select name="interesse" id="interesse" required>
-                <option disabled selected value="">Atração</option>
-                <option value="1">Cristo Redentor</option>
-                <option value="2">Pão de Açúcar</option>
-                <option value="3">Praia de Copacabana</option>
-                <option value="4">Praia de Ipanema</option>
-                <option value="5">Praia da Barra da Tijuca</option>
-                <option value="6">Praia do Leblon</option>
-                <option value="7">Jardim Botânico</option>
-                <option value="8">Maracanã</option>
-                <option value="9">Corcovado</option>
-                <option value="10">Sambódromo</option>
-            </select>
-
-        </div>
-
-
-        <div>
-            <h1>Qual o interesse na cidade?</h1>
-            <input class="checkbox" type="checkbox" name="teste" id="teste1">
-            <label for="teste1">Turista</label>
-            <input class="checkbox" type="checkbox" name="teste" id="teste2">
-            <label for="teste2">Residente</label>
-            <input class="checkbox" type="checkbox" name="teste" id="teste3">
-            <label for="teste3">Estudante</label>
-        </div>     
-        <div class="button">
-            <button type="reset">Limpar Formulário</button>
-            <button type="submit">Enviar Formulário</button>
-        </div>
-       
-
+      <div>
+        <h1>Qual o interesse na cidade?</h1>
+        <input class="radio" type="checkbox" name="teste" id="teste1" />
+        <label for="teste1">Turista</label>
+        <input class="radio" type="checkbox" name="teste" id="teste2" />
+        <label for="teste2">Residente</label>
+        <input class="radio" type="checkbox" name="teste" id="teste3" />
+        <label for="teste3">Estudante</label>
+      </div>
+      <div class="alignflex">
+        <button class="btn btn-reset" type="reset">Limpar Formulário</button>
+        <button class="btn btn-submit" type="submit">Enviar Formulário</button>
+      </div>
     </form>
-
-
-
-
-
-</body>
-
+  </body>
 </html>
