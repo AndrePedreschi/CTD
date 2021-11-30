@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211129 18:46:26.015" rpa="false" schemaversion="2">
+<suite id="s1" name="Andre" source="C:\Users\Major\Desktop\CTD\Automação de Teste\Andre.robot">
+<test id="s1-t1" name="Processo de compra da loja Sauce Demo">
+<kw name="Abrir a loja" library="Andre">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211129 18:46:26.423" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211129 18:46:26.422" endtime="20211129 18:46:30.058"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211129 18:46:30.058" endtime="20211129 18:46:30.183"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.75</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20211129 18:46:30.183" endtime="20211129 18:46:30.184"/>
+</kw>
+<status status="PASS" starttime="20211129 18:46:26.422" endtime="20211129 18:46:30.185"/>
+</kw>
+<kw name="Fazer login" library="Andre">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_LOGIN}</arg>
+<arg>${LOGIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211129 18:46:30.187" level="INFO">Typing text 'standard_user' into text field 'css=#user-name'.</msg>
+<status status="PASS" starttime="20211129 18:46:30.187" endtime="20211129 18:46:32.699"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211129 18:46:32.700" level="INFO">Typing text 'secret_sauce' into text field 'css=#password'.</msg>
+<status status="PASS" starttime="20211129 18:46:32.699" endtime="20211129 18:46:35.139"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211129 18:46:35.139" level="INFO">Clicking element 'css=#login-button'.</msg>
+<status status="PASS" starttime="20211129 18:46:35.139" endtime="20211129 18:46:36.854"/>
+</kw>
+<status status="PASS" starttime="20211129 18:46:30.186" endtime="20211129 18:46:36.854"/>
+</kw>
+<kw name="Selecionar um produto e colocar no carrinho" library="Andre">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PRODUTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211129 18:46:36.856" level="INFO">Clicking element 'css=#item_4_title_link &gt; div'.</msg>
+<status status="PASS" starttime="20211129 18:46:36.856" endtime="20211129 18:46:38.457"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ADICIONAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211129 18:46:38.459" level="INFO">Clicking element 'css=#add-to-cart-sauce-labs-backpack'.</msg>
+<status status="PASS" starttime="20211129 18:46:38.458" endtime="20211129 18:46:40.044"/>
+</kw>
+<status status="PASS" starttime="20211129 18:46:36.855" endtime="20211129 18:46:40.044"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211129 18:46:40.045" endtime="20211129 18:46:44.975"/>
+</kw>
+<status status="PASS" starttime="20211129 18:46:26.421" endtime="20211129 18:46:44.976"/>
+</test>
+<status status="PASS" starttime="20211129 18:46:26.017" endtime="20211129 18:46:44.979"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Andre">Andre</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
