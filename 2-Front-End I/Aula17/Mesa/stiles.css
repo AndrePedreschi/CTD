@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'main-header main-header'
+    'main-aside main-content'
+    'main-footer main-footer';
+}
+
+
+header{
+    background-color: rgb(165, 42, 42);
+    grid-area: main-header;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+aside{
+    background-color: chartreuse;
+    grid-area: main-aside;
+    
+    /* padding: 80px; usamos se queremos queremos o header transparente */
+    margin-top: 80px;
+}
+
+main{
+    background-color: cornflowerblue;
+    grid-area: main-content;
+    margin-top: 80px;
+}
+main h1{
+    margin: 10px;
+}
+ul{
+    /* height: 400px;
+    align-items: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 32px;
+    justify-content: center;
+    /* flex-direction: column;
+    align-items: center; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.video{
+    width: 400px;
+    transition: .2s ease-in-out;
+}
+
+.video img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+    /* margin-left: 50px; */
+    justify-content: center;
+
+}
+
+.video:hover{
+    transform: scale(1.05);
+}
+footer{
+    background-color: darkgrey;
+    grid-area: main-footer;
+    height: 200px;
+}
+
+
+main .titulo{
+    font-size: 40px;
+}
+
+aside img{
+    display: none;
+}
+
+
+@media ( max-width: 609px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'main-header'
+        'main-aside'
+        'main-content'
+        'main-footer';
+    }
+   
+
+    header{
+        background-color: rgb(165, 42, 42);
+        grid-area: main-header;
+        height: 70px;
+        position: fixed;
+        width: 100%;
+    }
+    
+    aside{
+        background-color: chartreuse;
+        grid-area: main-aside;
+        margin-top: 70px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        
+
+    }
+    aside img{
+        height: 40px;
+        width: 40px;
+        display: inline;
+    }
+    main{
+        background-color: cornflowerblue;
+        grid-area: main-content;
+        margin-top: 0px;
+    }
+    main h1{
+        margin: 10px;
+    }
+    main .titulo{
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul{
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        list-style: none;
+        display: flex;
+        gap: 24px;
+        padding: 32px;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    
+    }
+    
+    ul a{
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .video img{
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        
+    }
+    
+    footer{
+        background-color: darkgrey;
+        grid-area: main-footer;
+        height: 100px;
+    }
+    
+}
+
+
+
+
+@media (max-width:424px){
+    header{
+        background-color: rgb(165, 42, 42);
+        grid-area: main-header;
+        height: 65px;
+        position: fixed;
+        width: 100%;
+    }
+    .head-button{
+        display: none;
+    }
+    aside{
+        background-color: chartreuse;
+        grid-area: main-aside;
+        margin-top: 65px;
+    }
+    
+    main{
+        background-color: cornflowerblue;
+        grid-area: main-content;
+    }
+    main h1{
+        margin: 10px;
+        
+    }
+    ul{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        list-style: none;
+        display: flex;
+        gap: 24px;
+        padding: 32px;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    ul a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+    
+    .video img{
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        
+    }
+    
+    .videos{
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    footer{
+        background-color: darkgrey;
+        grid-area: main-footer;
+        height: 70px;
+    }
+    
+    
+    main .titulo{
+        font-size: 20px;
+    }
+
+}

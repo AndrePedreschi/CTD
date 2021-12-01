@@ -4,3 +4,60 @@
     box-sizing: border-box;
 }
 
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'main-header main-header main-header'
+    'main-aside main-content main-content'
+    'main-footer main-footer main-footer';
+}
+
+header{
+    background-color: rgb(190, 144, 144);
+    grid-area: main-header;
+    height: 80px;
+}
+
+aside{
+    grid-area: main-aside;
+    width: 200px;
+    margin: 0 auto;
+
+}
+aside p{
+text-align: center;
+}
+
+main{
+    display: flex;
+    
+}
+main .formulario{
+    background-color: rgb(182, 182, 185);
+    grid-area: main-content;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 600px;
+    
+}
+div{
+    margin-top: 15px;
+}
+ul{
+    list-style: none;
+    margin-top:px;
+}
+.warning{
+    margin-top: 10px;
+}
+.kakejiku{
+    margin: 10px;
+}
+footer{
+    background-color: brown;
+    grid-area: main-footer;
+    height: 150px;
+    margin-top: 15px;
+}
