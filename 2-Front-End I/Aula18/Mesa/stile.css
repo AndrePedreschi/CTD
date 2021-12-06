@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color:rgb(165, 165, 165);
+    position: sticky;
+    top: 0;
+    gap: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+ 
+}
+main{
+    background-color: darkkhaki;
+}
+.banner img{
+    height: 100vh;
+    width: 100vw;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    justify-content:space-between;
+    margin-left: 24px;
+   
+   
+}
+.textos{
+    height: 1000px;
+    padding: 100px;
+    display: flex;
+    gap: 50px;
+}
+.rodape{
+    background-color: burlywood;
+    height: fit-content;
+    
+}
+
+.lista{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

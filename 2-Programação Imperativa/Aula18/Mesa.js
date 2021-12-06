@@ -3,21 +3,26 @@
 // Caso o número da iteração somado com o número passado pelo parâmetro seja par, aparecerá no console: "O número x é par"
 
 function loopDePares(x) {
-    for (let i=0; i<100; i++) {
-        if ((x+i) % 2 == 0) {
-            
-            return "O número "+(x+i)+" é par";
+    for (let i = 0; i <= 100; i++) {
+        if ((x + i) % 2 == 0) {
+            console.log("O número " + (x + i) + " é par");
         }
     }
 }
-
-console.log(loopDePares(2));
-
+//
 
 //2 - Loop ímpares com palavra
 // Você deve criar uma função chamada loopDeImpares que receba um número e uma palavra como parâmetro e faça loops de 0 a 100 mostrando cada número do loop no console.
 // Agora, modifique o código para que, caso esse número somado com o número passado por parâmetro seja ímpar, mostre a palavra passada por parâmetro no console.
+function loopDePares(x, y) {
+    for (let i = 0; i <= 100; i++) {
 
+        if ((x + i) % 2 != 0) {
+            console.log((x + i) + ' ' + y);
+        }
+    }
+}
+//console.log(loopDePares(2, 'Péricles'));
 
 
 
@@ -28,8 +33,14 @@ console.log(loopDePares(2));
 // soma(3) deve retornar 6 pois faz (1 +2 +3)
 // soma(8) deve retornar 36
 
-
-
+function soma(x) {
+    let y = 0;
+    for (let i = x; i > 0; i--) {
+        y = y + i;
+    }
+    return y;
+}
+//console.log(soma(4));
 
 
 
@@ -39,7 +50,14 @@ console.log(loopDePares(2));
 // newArray(5) deve retornar [1,2,3,4,5]
 // newArray(10) deve retornar [1,2,3,4,5,6,7,8,9,10]
 
-
+function newArray(num) {
+    let newArray = [];
+    for (let i = 1; i <= num; i++) {
+        newArray.push(i);
+    }
+    return newArray;
+}
+//console.log(newArray(16));
 
 
 
@@ -50,10 +68,14 @@ console.log(loopDePares(2));
 // split(“olá”) deve retornar [”o”,”l”,”á”]
 // split(“tchau”) deve retornar [“t”,“c”,”h”,”a”,”u”]
 
-// function split(x) {
-
-// }
-// push(string[i])
+function split(x) {
+    let array = [];
+    for (let i = 0; i < x.length; i++) {
+        array.push(x[i]);
+    }
+    return array;
+}
+//console.log(split("ola"));
 
 
 
@@ -66,7 +88,36 @@ console.log(loopDePares(2));
 // moverZeros([false,1,0,1,2,0,1,3,"a"]) deve retornar [false,1,1,2,1,3,"a",0,0]
 // moverZeros([1,2,0,1,0,1,0,3,0,1]) deve retornar [1,2,1,1,3,1,0,0,0,0]
 
-// 2 filters 1 para tirar os 0 e outro para add os 0, depois juntar os dois com os 0 no final
+function moverZeros(x) {
+    let arrayZero = [];
+    let arrayNovo = [];
+    let arrayFinal = [];
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] == 0) {
+            arrayZero.push(x[i]);
+        } else {
+            arrayNovo.push(x[i]);
+        }
+    }
+    return arrayFinal = [...arrayNovo, ...arrayZero];
+}
+
+//console.log(moverZeros([false,1,0,1,2,0,1,3,"a"]));
+
+function moverZeros(x) {
+    let arrayZero = x.filter(item => {
+        return item === 0;
+    })
+    let arrayNovo = x.filter(item => {
+        return item !== 0;
+    })
+    let arrayFinal = [...arrayNovo, ...arrayZero]
+    return arrayFinal;
+}
+
+//console.log(moverZeros([false,1,0,1,2,0,1,3,"a"]));
+
+
 
 
 
@@ -78,6 +129,15 @@ console.log(loopDePares(2));
 // Eu sou 2 e eu sou l
 // Eu sou 3 e eu sou á
 
+function arrayHandler(x, y) {
+    for (let i = 0; i < x.length; i++) {
+        console.log("Eu sou " + x[i] + " e eu sou " + y[i]);
+    }
+}
+//arrayHandler([1,2,3], ['o','l','á']);
+
+
+
 
 
 //8 - Arrays de objetos
@@ -86,6 +146,17 @@ console.log(loopDePares(2));
 // arrayObjects(5) deve retornar [{valor: 1}, {valor: 2}, {valor: 3}, {valor: 4}, {valor: 5}]
 // arrayObjects(3) deve retornar [{valor: 1}, {valor: 2}, {valor: 3}]
 
+
+function arrayObjects(x) {
+    let arrayObj = [];
+    for (let i = 1; i <= x; i++) {
+        arrayObj.push('{valor: '+i+'}');
+        
+    }
+    return arrayObj;
+}
+
+//console.log(arrayObjects(5));
 
 
 
@@ -96,3 +167,13 @@ console.log(loopDePares(2));
 // arrayObjectsTwo(5, “olá”) deve retornar [{olá: 1}, {olá: 2}, {olá: 3}, {olá: 4}, {olá: 5 }]
 // arrayObjectsTwo(3, “tchau”) deve retornar [{tchau: 1}, {tchau: 2}, {tchau: 3}]
 
+function arrayObjectsTwo(x,y) {
+    let arrayObj = [];
+    for (let i = 1; i <= x; i++) {
+        arrayObj.push('{'+y+': '+i+'}');
+        
+    }
+    return arrayObj;
+}
+
+//console.log(arrayObjectsTwo(9,"tchau"));
