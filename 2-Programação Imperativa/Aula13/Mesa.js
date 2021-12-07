@@ -110,20 +110,23 @@ let alunos={
     media: function (num) {
         //console.log(num);
         let soma=0;
-        //console.log(this.baseDados.length);
+        let total=0
+        //console.log(this.baseDados);
         for (let count = 0; count <= this.baseDados.length; count++) {
-
-            if (num==this.baseDados[count].numero) {
+            
+            if (this.baseDados[count].numero===num) {
 
                 for (let i = 0; i < 4; i++) {
                     soma=soma+this.baseDados[count].notas[i];
+                    //console.log(this.baseDados[count].notas[i]);
+                    //console.log(soma);
                 }
-                soma=soma/4;
             }
-            console.log(soma);
-            
+            //console.log(this.baseDados[1].notas[0]);
+            //console.log(this.baseDados[1].numero)
+            total=soma/4;
         }
-       
+        return total;
     },
 }
 //console.log(alunos.baseDados);

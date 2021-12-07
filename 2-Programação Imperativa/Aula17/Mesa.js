@@ -76,12 +76,8 @@ let compNota = alunos.sort(function (a, b) {
 
 //Temos que fazer um sistema para um Agricultor controlar suas vendas. Ele tem um controle de vendas em um caderno, onde os produtos estão organizados por nome, preço e quantidade vendida. 
 //Portanto, crie um array de objetos literais com essas informações. No sistema, você tem que adicionar uma função (ou várias) que realize os seguintes passos:
-//Calcular o lucro total de todos os produtos;
-//Permitir pesquisar um produto pelo nome e calcular seu lucro total;
-//Permite receber um valor e indicar todos os produtos que venderam mais que esse valor;
-//Classifique todos os produtos pela quantidade de dinheiro que geraram.
-//Encontre um produto e atribua a ele um novo valor (reutilize o código que permite encontrar o produto pelo nome).
-//Calcule o lucro total após pagar 45% do lucro em impostos.
+
+
 
 
 
@@ -97,9 +93,74 @@ let dados = [
 {nome:"Cenoura", preco:5.45, qtdVenda:275 },
 ];
 
-console.log(dados);
-// nome:
-// preco:
-// qtdVenda:
+//console.log(dados);
+
+//1 - Calcular o lucro total de todos os produtos;
+//Resolução Normal
+function lucroTotal(x) {
+  let soma=0;
+  for(let i=0; i<x.length;i++){
+    soma= soma+(x[i].preco*x[i].qtdVenda);
+  }
+return soma;
+}
+//console.log(lucroTotal(dados));
+
+//Resolução Simples
+let totaLucro =dados.reduce((acumulador,item)=>{return acumulador+(item.qtdVenda*item.preco)},0);
+//console.log(totaLucro);
+
+
+
+//2 - Permitir pesquisar um produto pelo nome e calcular seu lucro total; 
+function pesquisaLucro(x,y) {
+  let itemEspecifico = x.filter((item)=>{return item.nome==y});
+  let lucro =itemEspecifico.reduce((acumulador,item)=>{return acumulador+(item.qtdVenda*item.preco)},0);
+  return lucro;
+}
+//console.log(pesquisaLucro(dados,"Cenoura"));
+
+
+//3 -  Permite receber um valor e indicar todos os produtos que venderam mais que esse valor;
+
+//resposta seimples, sem agrupar
+function pesquisaVendas(x,y) {
+  let filtroVendas = x.filter((item)=>{return item.qtdVenda>y});
+return filtroVendas;
+}
+//console.log(pesquisaVendas(dados,140));
+
+
+
+//4 - Classifique todos os produtos pela quantidade de dinheiro que geraram.
+// let todosLucro=dados.map((item)=>{return { "nome:" +item.nome+","+ "lucro:" +item.qtdVenda*item.preco+ } });
+// console.log(todosLucro);
+
+
+
+
+//5 - Encontre um produto e atribua a ele um novo valor (reutilize o código que permite encontrar o produto pelo nome).
+function trocaValor(x,y) {
+  let itemEspecifico = x.filter((item)=>{return item.nome==y});
+  
+  let lucro =itemEspecifico.reduce((acumulador,item)=>{return acumulador+(item.qtdVenda*item.preco)},0);
+  return lucro;
+}
+
+console.log(trocaValor(dados,"Cenoura"));
+
+
+
+
+
+
+
+//6 - Calcule o lucro total após pagar 45% do lucro em impostos.
+function imposto(x) {
+  let lucroImposto =dados.reduce((acumulador,item)=>{return acumulador+(item.qtdVenda*item.preco)},0);
+  return lucroImposto=(lucroImposto*0.65).toFixed(2);
+}
+//console.log("Lucro descontado impostos R$: "+imposto(dados));
+
 
 

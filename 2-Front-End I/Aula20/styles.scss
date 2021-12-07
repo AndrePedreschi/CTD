@@ -1,0 +1,32 @@
+@import './Styles/buttons';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin base-title {
+    line-height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
+
+
+
+
+.main-header{
+    background-color: aquamarine;
+    padding: 24px;
+    img{
+        width: 100px;
+    }
+
+    ul{
+        background-color: rgb(25, 124, 211);
+        li{
+            color: black;
+            @include base-title
+        }
+    }
+}
