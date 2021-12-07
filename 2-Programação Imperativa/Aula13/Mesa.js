@@ -51,19 +51,88 @@ let banco = {
 //Exercício Bônus - Propriedade Única
 
 
+let array = [{ nome: "Lean", idade: 27 }, { nome: "Eze", idade: 49 }];
+
+function propriedadeUnica(x, y) {
+    let arrayOrg = [];
+    if (y == "nome") {
+        for (let i = 0; i < x.length; i++) {
+            arrayOrg.push("{nome:" + x[i].nome + "}");
+        }
+        return arrayOrg;
+
+    } else if (y == "idade") {
+        for (let i = 0; i < x.length; i++) {
+            arrayOrg.push("{idade:" + x[i].idade + "}");
+        }
+        return arrayOrg;
+    }
+}
+//console.log(propriedadeUnica(array, "nome"));
+
+//Resolução fixa
+// let aluno = {
+//     nome: 'André Pedreschi',
+//     numero: 1,
+//     listaNotas: [10, 8, 7, 9],
+
+//     media: function () {
+//         let media=0;
+//         for (let i = 0; i < this.listaNotas.length; i++) {
+//             media=media+this.listaNotas[i];
+//         }
+//         media=media/4;
+//         return media
+//     },
+// }
+
+// console.log(aluno.media());
 
 
-function propriedadesUnica(nome,idade) {
+
+//Resolução dinâmica
+
+function base(nome, numero, listaNotas) {
     this.nome=nome;
-    this.idade=idade;       
+    this.numero=numero;
+    this.notas=listaNotas;
 }
 
-let array = [ { nome: "Lean", idade: 27 }, { nome: "Eze", idade: 49} ];
-// console.log(array[0].idade);
+let listAluno =[];
+listAluno.push(new base('André Pedreschi',1,[10,8,7,9]), new base('João Melão',2,[7,6,4,8]), new base('Márcia',3,[9,5,7,2]));
 
-let teste=[];
+//console.log(listAluno);
 
-teste.push(new propriedadesUnica(array[0].nome), new propriedadesUnica(array[0].idade), new propriedadesUnica(array[1].nome), new propriedadesUnica(array[1].idade));
-console.log(propriedadesUnica.nome);
-// console.log(propriedadesUnica.nome);
-// console.log(propriedadesUnica.idade);
+
+
+let alunos={
+    baseDados: listAluno,
+    media: function (num) {
+        //console.log(num);
+        let soma=0;
+        //console.log(this.baseDados.length);
+        for (let count = 0; count <= this.baseDados.length; count++) {
+
+            if (num==this.baseDados[count].numero) {
+
+                for (let i = 0; i < 4; i++) {
+                    soma=soma+this.baseDados[count].notas[i];
+                }
+                soma=soma/4;
+            }
+            console.log(soma);
+            
+        }
+       
+    },
+}
+//console.log(alunos.baseDados);
+alunos.media(3);
+
+
+
+
+
+
+// const fs = require('fs');
+// let dados=fs.readFileSync(__dirname+'/dados.txt', 'utf8');
