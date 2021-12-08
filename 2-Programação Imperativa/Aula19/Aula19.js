@@ -1,7 +1,7 @@
 const dados = require('./dados')
 
 
-//Exercício 1
+//Exercício 1 - a maior e a menor altura do grupo
 
 function altura(x) {
     let alturaOrdem = x.sort(function (a, b) {
@@ -22,7 +22,7 @@ function altura(x) {
 
 
 
-//Exercício 2
+//Exercício 2 - a média de altura das mulheres
 function alturaMulher(x) {
     let mulher = x.filter(function (item) {
         return item.sexo=="F";
@@ -37,7 +37,7 @@ function alturaMulher(x) {
 
 
 
-//Exercício 3
+//Exercício 3 - o número de homens
 function qtdHomens(x) {
     let homens = x.filter(function (item) {
         return item.sexo=="M";
