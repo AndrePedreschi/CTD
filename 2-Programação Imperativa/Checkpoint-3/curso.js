@@ -29,7 +29,7 @@ curso.novoEstudante(new aluno("Kleber", 5, [3, 2, 7, 4, 6]));
 //Verifica se um aluno em específico passou
 console.log(curso.aprovacaoVerificar(curso.estudantesLista[0]));
 
-//Verifica se todos os alunos da çista passaram
+//Verifica se todos os alunos da lista passaram
 console.log(curso.verificaTodos());
 
 
