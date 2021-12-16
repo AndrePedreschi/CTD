@@ -20,7 +20,8 @@ header{
     position: sticky;
     background-color: rgb(248,249,250);
     z-index: 100;
-   
+    display: flex;
+    justify-content: space-between;
 
 }
 

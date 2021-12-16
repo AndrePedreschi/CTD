@@ -20,7 +20,8 @@ header{
     position: sticky;
     background-color: rgb(248,249,250);
     z-index: 100;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 #itens{
@@ -207,28 +208,21 @@ footer div h1{
         flex-direction: column;
         align-items: center;
     }
-       
     .sobre-iptv h1 {
         margin-top: 10px;
         padding: 10px;
         text-align: center;
         font-size: 3rem;
     }
-    
     .sobre-iptv p{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 20px;
         text-align:left;
         font-size: .8rem;
         font-weight: bold;
-    
-    
     }
-    
-    }
-    
-    
-    
+}
+   
     @media(max-width: 645px){
           
     .dadosAlunos{
@@ -254,29 +248,15 @@ footer div h1{
         font-size: 2rem;
     }
     
-    .sobre-iptv p{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align:left;
-        font-size: .6rem;
-        font-weight: bold;
     
-    
-    }
     }
     @media(max-width: 500px){
           
-        .sobre-iptv h1 {
-            margin-top: 10px;
-            padding: 10px;
-            text-align: center;
-            font-size: 1rem;
-        }
+    .sobre-iptv h1 {
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
         
-        .sobre-iptv p{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align:left;
-            font-size: .5rem;
-            font-weight: bold;
-        
-        }
-        }
+    }

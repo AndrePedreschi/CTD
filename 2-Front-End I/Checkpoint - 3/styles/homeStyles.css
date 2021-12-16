@@ -20,9 +20,9 @@ header{
     position: sticky;
     background-color: rgb(248,249,250);
     z-index: 100;
-    
+    display: flex;
+    justify-content: space-between;
 }
-
 #itens{
     margin-top: 10px;
     padding: 30px;
@@ -125,14 +125,25 @@ line-height: 2rem;
 .box-itens{
     margin-top: 10px;
     padding: 20px;
-}
-
-.box-itens{
     display: flex;
     gap: 20px;
     width: 100%;
     
 }
+
+@keyframes opacidade{
+0%{
+    opacity: 0.25;
+    transform: scale(0.25);
+}
+
+100%{
+    opacity: 1.0;
+    transform: scale(1);
+}
+}
+
+   
 
 .card{
     gap:15px;
@@ -141,6 +152,9 @@ line-height: 2rem;
     padding: 0;
     margin-bottom: 110px;
     transition: 0.5 ease-in-out;
+    animation-name: opacidade;
+    animation-duration: 2s;
+    animation-iteration-count:initial;
 }
 .card:hover{
    transform: scale(1.05); 
