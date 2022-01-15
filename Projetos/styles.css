@@ -58,6 +58,6 @@ ul{
 footer{
     background-color: brown;
     grid-area: main-footer;
-    height: 150px;
+    height: 140px;
     margin-top: 15px;
 }
