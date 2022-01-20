@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    background-color: rgb(228, 228, 228);
+}
+#search {
+    font-family: tahoma;
+    font-size: 15px;
+    font-style: italic;
+    border-radius: 3px;
+    
+}
+.whatsDuvi{
+    display: flex;
+    gap: 24px;
+    padding-left: 15px;
+}
+#whats>a{
+    display: flex;
+    gap: 5px;
+  /*   padding-right: 15px; */
+}
+#question>a{
+    display: flex;
+    gap: 5px;
+
+}
+.search{
+    padding-right: 15px;
+}
+
+.nav2{
+    background-color: rgb(206, 206, 206);
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 150px;
+    
+}
+#logo{
+    padding-left: 10px;
+}
+.redes{
+    display: flex;
+    gap: 20px;
+    padding-right: 10px; 
+    
+} 
+.redes>div>a{
+    display: flex;
+    gap: 5px;
+}
+.links>div>ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;   
+} 
+
+.texto {
+    font-family: tahoma;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.texto1 {
+    font-family: tahoma;
+    font-size: 36px;
+    font-style: italic;
+}
+
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+/* .SetOfCards{
+    margin-top: 50px;
+} */
+.card{
+    border-radius: 15px;
+    margin-top: 25px;
+    height: 475px;
+    
+    
+}
+/* .card>a>{
+   
+    align-items: center;
+}
+.card>a>img{
+    width: 200px;
+    
+}
+ */
+.card>a>img:hover{
+    transform: scale(1.15);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-body>p{
+font-weight: bold;
+text-align: center;
+
+}
