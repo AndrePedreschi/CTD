@@ -88,11 +88,13 @@ header{
 
 
 body {
-    background-color: rgb(228, 228, 228);
+    background-color: white;
 }
-/* .SetOfCards{
-    margin-top: 50px;
-} */
+
+.SetOfCards{
+width: 100%;
+padding: 50px;
+}
 .card{
     border-radius: 15px;
     margin-top: 25px;
@@ -100,18 +102,10 @@ body {
     
     
 }
-/* .card>a>{
-   
-    align-items: center;
-}
-.card>a>img{
-    width: 200px;
-    
-}
- */
-.card>a>img:hover{
-    transform: scale(1.15);
-}
+
+/* .card>a>img:hover{
+    transform: scale(1.05);
+} */
 .card-body{
     display: flex;
     flex-direction: column;
@@ -122,4 +116,162 @@ body {
 font-weight: bold;
 text-align: center;
 
+}
+
+
+.sobre{
+    background-color: rgb(228,228,228);
+    display: flex;
+    justify-content: center;
+}
+.sobre>div{
+    width: 400px;
+    text-align: center;
+    margin: 48px 0 48px 0;
+}
+
+.pagamento{
+    margin: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.divPag{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.divPag>div{
+    height: 50px;
+}
+.divPag>div>p{
+    margin: 0;
+    padding: 0;
+    
+}
+.divPag>div>.textPag{
+    font-size: 12px;
+}
+.titlePag{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.store{
+    background-color: rgb(206,206,206);
+}
+/* #rodape section{
+    margin: 96px 0 0 0;
+} */
+#rodape>section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.linksLoja{
+    margin-top: 24px;
+    
+}
+
+
+.lista{
+    list-style: none;
+}
+.lista>.titulo>a{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.lista>li>a{
+    font-size: 12px;
+}
+
+
+
+.seguranca{
+    margin: 12px 0 48px 0;
+    display: flex;
+    width: 400px;
+    height: 40px;
+    justify-content: center;
+}
+
+.seguMeio{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.seguMeio>h1{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.newsletter{
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.newsletter h1{
+    font-size: 18px;
+    font-weight: bolder;
+    width: 300px;
+}
+
+.newsletter button{
+    width: 400px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 8px;
+}
+.newsletter input{
+    width: 400px;
+    height: 36px;
+}
+.newsletter p{
+    font-weight: lighter;
+}
+.newsletter form{
+    margin-top: 24px;
+}
+
+.blackFooter{
+    background-color: black;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blackFooter div{
+    margin: 24px 0 0 0;
+    
+    
+
+}
+.blackFooter figure{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.blackFooter p{
+    color: white;
+    font-size: 12px;  
+    text-align: center; 
+}
+
+.chat{
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    padding: 18px;
+    color: white;
+    background-color: black !important;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
 }
