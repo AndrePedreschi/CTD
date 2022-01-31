@@ -78,12 +78,14 @@ header{
     font-family: tahoma;
     font-size: 24px;
     font-style: italic;
+   
 }
 
 .texto1 {
     font-family: tahoma;
     font-size: 36px;
     font-style: italic;
+    font-weight: bold;
 }
 
 
@@ -96,11 +98,16 @@ width: 100%;
 padding: 50px;
 }
 .card{
-    border-radius: 15px;
+    border: none;
     margin-top: 25px;
     height: 475px;
-    
-    
+}
+.dash {
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+    height: 1px;
+    background-color: black;
 }
 
 /* .card>a>img:hover{

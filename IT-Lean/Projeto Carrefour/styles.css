@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.imagemOferta{
+    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/14b59b92-e002-40f0-9403-df6c60faac65___a111d66cfd98454387ea7e19f0cdf4a6.jpg);
+    height: 50px;
+    width: 100%;
+}
+.header2{
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 190px;
+}
+.abas{
+    display: flex;
+    gap: 5px;
+}
+.button1 a{
+    margin-left: 50px;
+    padding: 0px 10px 0px 10px;
+    max-width: 114px;
+    height:32px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    color: rgb(128,162,223);
+    
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+}
+.button2 a{
+    
+    padding: 0px 10px 0px 8px;
+    max-width: 114px;
+    height:32px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(232,30,38);
+    color: white;
+    
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none; 
+}
+
+.button3 a{
+    
+    padding: 0px 10px 0px 8px;
+    max-width: 114px;
+    height:32px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(2,41,109);
+    color: white;
+   
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none; 
+}
+
+.listaHeader2{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    
+}
+.listaHeader2 a{
+    text-decoration: none;
+    
+    font-size: 12px;
+    color: black;
+    font-weight: lighter;
+}
+
+.header3{
+    display: flex;
+    margin: 15px 0px 15px 240px;
+
+}
+.searchBar{
+    display: flex;
+    
+}
+.searchBar input{
+    width: 500px;
+    height: 35px;
+    border: 1px solid rgb(30,91,198);
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    
+}
+
+.searchBar a{
+    background-color: rgb(30,91,198);
+    width: 35px;
+    height:35px;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.searchBar img{
+    width: 16px;
+    height: 16px;
+}
+
+.logoCarrefourHeader3{
+    height: 35px;
+    margin-right: 20px;
+}
+.iconesHeader3{
+    display: flex;
+
+}
+
+.iconesHeader3 div{
+    display: flex;
+    margin-left:20px; 
+    
+
+}
+.iconesHeader3 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.iconesHeader3 p{
+    
+    font-size: 12px;
+}
+
+.header4{
+    background-color: rgb(30,91,198);
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 185px;    
+}
+
+.header4 a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.cartaoCarrefour {
+    display: flex;
+    gap: 5px;
+}
+
+.header5{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 0 235px;
+    
+}
+
+.header5 div{
+    display: flex;
+    align-items: center;
+
+}
+.header5>div>img{
+    width: 24px;
+}
+.header5>a>img{
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transform: rotate(270deg);
+}
+
+.line{
+    width: 100%;
+    display: block;
+    margin: 10px;
+    height: 1px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    
+}
+
+.imgBanner1{
+    display: flex;
+    justify-content: center;
+    
+}
+.imgBanner1 img{
+    border-radius: 5px;
+    
+}
+
+.imgMain2{
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+    gap: 10px;
+    
+    
+}
+.imgMain2 img{
+    height: 360px;
+    width: 353px;
+    border-radius: 5px;
+}
+
+
+.logo1Main3{
+    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/678af396-9967-42ed-9288-4ac418e3a77b___b83eb3c4ba71dcfe1619252a36544fdc.png);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+
+    border: 1px solid black;
+    border-radius: 100px;
+}
+.logo1Main3:hover{
+border: 1px solid blue;
+box-shadow: 1px 1px 1em black;
+}
+
+
+
+
+.textoMain4{
+    margin: 20px 0 10px 235px;
+    font-size: 24px;
+    color: rgb(27, 27, 158);
+}
+
+
+.ofertaMain4{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgMain4Oferta1{
+    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/ecf4fa5c-dd8e-430f-a03c-e0674cfca05d___214f50625c56a7630bef364d040e6d57.jpg);
+    width: 475px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    border-radius: 5px;
+}
+.imgMain4Oferta2{
+    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/083120af-d82c-45ce-9132-868b24ec22c3___b397111e36c1c975115ccf15e12c4dbd.jpg);
+    width: 475px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    border-radius: 5px;
+}
+.imgMain4Oferta3{
+    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/acb57e5d-7eef-44a9-b128-c3be0a2c0568___e125e4d2dc862b199b6d04178f49fe46.jpg);
+    width: 475px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.imgMain5{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 50px;
+}
+.imgMain5 img{
+    border-radius: 5px;
+    
+}
+
+
+.main5p{
+    display: flex;
+    margin: 0 235px;
+    justify-content: space-between;
+    color: rgb(27, 27, 158);
+}
+.main5p p{
+    font-size: 24px;
+}
+
+
+.main5Ofertas{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+}
+.oferta1{
+    display: flex;
+    gap: 10px;
+}
+.oferta1 img{
+    width: 350px;
+    height: 350px;
+}
+
+.oferta2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.oferta3{
+    display: flex;
+    gap: 10px;
+}
+.oferta3 img{
+    height: 170px;
+    width: 350px;
+} 
+.imgOferta2{
+    width: 710px;
+    height: 170px;
+}
+
+
+
+
+
+.imgMain6{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 24px 0 24px 0;  
+}
+
+
+.imgMain6 img{
+    width: 280px; 
+}
+.textMain6{
+    display: flex;
+    margin: 0 235px;
+    justify-content: space-between;
+    color: rgb(27, 27, 158);
+   
+}
+.textMain6 p{
+    font-size: 24px;
+}
+.imgsMain6{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.regrasPromo{
+    border: 1px solid blue;
+    border-radius: 5px;
+    height: 36px;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: auto;
+
+}
+
+.regrasPromo a{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: blue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer1{
+    display: flex;
+    gap: 36px;
+    margin-left: 235px;
+}
+.linkFooter{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.texto{
+    
+    width: 180px;
+}
+.paragrafo1{
+    font-size: 14px;
+    font-weight: bold;
+}
+.paragrafo2{
+font-size: 12px;
+font-weight: lighter;
+color: gray;
+margin-top: 5px;
+}
+
+.footer2 img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+.footer3{
+    display: flex;
+    gap: 24px;
+    
+    margin: 24px 250px 24px 235px;
+    justify-content: space-between;
+}
+
+.colun{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 190px;
+    
+}
+.colun a{
+    text-decoration: none;
+    
+}
+.titleFooter3{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+.normal{
+    font-size: 14px;
+    color: gray;
+}
+
+.marketplaceFooter{
+    color: blue;
+    font-size: 18px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 36px;
+    width: 200px;
+    
+    font-size: 15px;
+}
+
+.textoColun{
+    font-size: 12px;
+}
+.textoColun1{
+    font-weight: bold;
+}
+
+.footer4{
+    padding:15px 250px 15px 235px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pagamentos>p{
+    margin-bottom: 5px;
+}
+.pagamentos img{
+    height: 24px;
+    width: 28px;
+}
+.debt{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.textoFooter1{
+    font-weight: bold;
+    
+    
+}
+
+.redes>p{
+    margin-bottom: 15px;
+}
+.redes>div{
+    display: flex;
+    gap: 24px;
+}
+.redes img{
+    width: 26px;
+    height: 24px;
+}
+
+
+.footer5{
+    background-color: rgb(242,242,242);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 250px 30px 235px;
+
+}
+.textFooter{
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+}
+.textunidos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seguro{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+.im1{
+height: 35px;
+width:90px;
+}
+.im2{
+width: 70px;
+height:100px ;
+}
+
+.sitemap{
+    text-align: center;
+    margin: 25px;
+   
+}
+.sitemap a{
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1025){
+.imagemOferta{
+    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/e60a756b-c11d-418a-a86d-39b3263510cd___031bec64f05d8ae01b328d86bd62ca90.png);
+    height: 150px;
+    width: 923px;
+}  
+main{
+    background-color: black;
+}
+}
