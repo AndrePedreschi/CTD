@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+
+.main-header {
+
+    background-color: white;
+    padding: 5px 80px;
+
+}
+
+.main-header img {
+
+    width: 167px;
+
+}
+
+.main-content {
+
+    min-height: 100vh;
+    background-color: #E5E5E5;
+    padding: 80px 0;
+
+}
+
+.preview {
+
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.not-found-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.not-found-container span {
+
+    font-size: 142px;
+    opacity: .4;
+
+}
+
+.fab {
+
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    border-radius: 50% !important;
+    font-size: 36px !important;
+    padding: 4px 20px !important;
+
+}
+
+.tabs {
+
+    justify-content: center;
+
+}
