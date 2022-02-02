@@ -230,23 +230,53 @@
     border-radius: 5px;
 }
 
-
-.logo1Main3{
-    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/678af396-9967-42ed-9288-4ac418e3a77b___b83eb3c4ba71dcfe1619252a36544fdc.png);
+.imgMain3{
+    display: flex;
+    margin: 15px 235px;
+    justify-content:space-between;
+}
+.textMain3{
+    margin-left: 235px;
+    font-size: 24px;
+    color: rgb(27, 27, 158);
+}
+.logoMain3{
     background-size: cover;
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
 
     border: 1px solid black;
     border-radius: 100px;
 }
-.logo1Main3:hover{
+.logoMain3:hover{
 border: 1px solid blue;
 box-shadow: 1px 1px 1em black;
 }
 
-
-
+.logo1Main3{
+    background-image: url(./imgs/main4-1.png);
+}
+.logo2Main3{
+    background-image: url(./imgs/main4-2.webp);
+}
+.logo3Main3{
+    background-image: url(./imgs/main4-3.webp);
+}
+.logo4Main3{
+    background-image: url(./imgs/main4-4.webp);
+}
+.logo5Main3{
+    background-image: url(./imgs/main4-5.webp);
+}
+.logo6Main3{
+    background-image: url(./imgs/main4-6.webp);
+}
+.logo7Main3{
+    background-image: url(./imgs/main4-7.webp);
+}
+.logo8Main3{
+    background-image: url(./imgs/main4-8.webp);
+}
 
 .textoMain4{
     margin: 20px 0 10px 235px;

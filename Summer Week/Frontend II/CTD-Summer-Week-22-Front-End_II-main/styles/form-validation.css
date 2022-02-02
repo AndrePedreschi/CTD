@@ -1,0 +1,10 @@
+.container {
+  max-width: 950px;
+}
+
+/* Retira o circulo do UL e dos LIs */
+ul {
+  list-style-type: none;
+}
+
+
