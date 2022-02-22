@@ -9,7 +9,8 @@ public class OlaMundo {
 		String nome; //estou criando uma variável do tipo string
 		int idade=29;
 		float altura;
-		
+		float imc;
+		float peso;
 		Scanner leia = new Scanner(System.in); //estou crindo a entreada de dados
 		
 		System.out.println("Olá mundo!!!!");
@@ -18,6 +19,14 @@ public class OlaMundo {
 		nome = leia.nextLine();
 		System.out.println("\n\t\tEntre com a sua altura: ");
 		altura = leia.nextFloat();
+		System.out.println("\nDigite o seu peso");
+		
+		peso=leia.nextFloat();
+		
+		imc=peso/(altura*altura);
+		
+		
+		System.out.println(nome+" você tem "+idade+" anos e "+altura+"m de altura, o seu IMC é:"+imc);
 		
 		
 		
