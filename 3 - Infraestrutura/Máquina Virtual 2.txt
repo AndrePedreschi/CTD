@@ -1,0 +1,5 @@
+senha root: Bisteca1
+Nome completo novo Usuário: Maquina 2 - CTD
+nome de usuário para a nova conta: maquina2ctd
+senha: maquina2ctd
+
