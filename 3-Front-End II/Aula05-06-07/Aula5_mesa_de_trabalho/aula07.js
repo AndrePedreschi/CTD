@@ -16,7 +16,7 @@ function changeImg() {
 
     let div=listafelinos[escolha].parentElement;
     let h2=div.querySelector('h2');
-    if(escolha==4){
+    if(escolha==4){  // kkkkk
         h2.innerText="jaguar tirica";
     }
 }

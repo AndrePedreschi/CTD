@@ -30,25 +30,34 @@ let Felinos = [{
     descricao: " O guepardo, ou chita (Acinonyx jubatus) é um membro atípico da família felina. É o único representante vivo do gênero Acinonyx. Ele caça graças à sua visão e grande velocidade. É o animal terrestre mais rápido do mundo, atingindo uma velocidade máxima de 115 km/h em corridas de até quinhentos metros."
 }];
 
-const container = document.querySelector('.container');
-
-cards.forEach(card => {
-    card.remove();
-});
+let container = document.querySelector('.container');
 
 
-Felinos.forEach(card=>{
+function remover(){
+    let cards = document.querySelectorAll('.item');
+    cards.forEach(card => {
+        card.remove();
+        console.log("texto");
+    });
 
-    let novaDiv = document.createElement('div');
-    novaDiv.innerHTML=`
-    <div class="item">
-        <img src=${card.src}>
-            <h2>${card.nome}</h2>
-            <p>${card.descricao}</p>
-    </div>`
+}
 
-    //container.insertBefore(novaDiv,container.firstChild); //Os cards acabam ficando na ordem trocada
-   container.insertBefore(novaDiv,container.lastElementChild); //Acerta a ordem dos cards
-   //container.appendChild(novaDiv.lastChild); 
-   //container.appendChild(novaDiv); 
-});
+function adicionar(){
+    Felinos.forEach(card=>{
+        let novaDiv = document.createElement('div');
+        novaDiv.innerHTML=`
+        <div class="item">
+            <img src=${card.src}>
+                <h2>${card.nome}</h2>
+                <p>${card.descricao}</p>
+        </div>`
+    
+        //container.insertBefore(novaDiv,container.firstChild); //Os cards acabam ficando na ordem trocada
+       //container.insertBefore(novaDiv,container.lastElementChild); //Acerta a ordem dos cards
+      // container.insertBefore(novaDiv,container.lastChild);
+     container.appendChild(novaDiv.lastChild); //adiciona sem quebrar a formatação do css
+      // container.appendChild(novaDiv); 
+    });
+
+}
+
