@@ -1,0 +1,9 @@
+docker system prune --all --force --volumes
+
+
+
+
+docker exec -it some-mysql bash
+
+
+
