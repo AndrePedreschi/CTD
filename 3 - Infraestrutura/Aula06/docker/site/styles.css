@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'main-header'
+    'main-content'
+    'main-footer';
+    }
+    header{
+        grid-area: main-header;
+    }
+    main{
+        grid-area: main-content;
+    }
+    footer{
+        grid-area: main-footer;
+    } */
+    
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.imagemOferta{
+    background-image: url('./imgs/header1.jpg');
+    height: 50px;
+    width: 100%;
+    
+}
+.header2{
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 190px;
+}
+.abas{
+    display: flex;
+    gap: 5px;
+}
+.button1 a{
+    margin-left: 50px;
+    padding: 0px 10px 0px 10px;
+    max-width: 114px;
+    height:32px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    color: rgb(128,162,223);
+    
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.button2 a{
+    
+    padding: 0px 10px 0px 8px;
+    max-width: 114px;
+    height:32px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(232,30,38);
+    color: white;
+    
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none; 
+}
+
+.button3 a{
+    
+    padding: 0px 10px 0px 8px;
+    max-width: 114px;
+    height:32px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(2,41,109);
+    color: white;
+   
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none; 
+}
+
+.listaHeader2{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    
+}
+.listaHeader2 a{
+    text-decoration: none;
+    
+    font-size: 12px;
+    color: black;
+    font-weight: lighter;
+}
+
+.header3{
+    display: flex;
+    margin: 15px 0px 15px 240px;
+
+}
+#popup{
+    background-image: url('./imgs/popup.webp');
+    width: 290px;
+    height: 178px;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+}
+
+.searchBar{
+    display: flex;
+    
+}
+.searchBar input{
+    width: 500px;
+    height: 35px;
+    border: 1px solid rgb(30,91,198);
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    
+}
+
+.searchBar a{
+    background-color: rgb(30,91,198);
+    width: 35px;
+    height:35px;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.searchBar img{
+    width: 16px;
+    height: 16px;
+}
+
+.logoCarrefourHeader3{
+    height: 35px;
+    margin-right: 20px;
+}
+.iconesHeader3{
+    display: flex;
+
+}
+
+.iconesHeader3 div{
+    display: flex;
+    margin-left:20px; 
+    
+
+}
+.iconesHeader3 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.iconesHeader3 p{
+    
+    font-size: 12px;
+}
+
+.header4{
+    background-color: rgb(30,91,198);
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 185px; 
+      
+}
+
+.header4 a{
+    text-decoration: none;
+    color: white;
+}
+.header4 div{
+    margin: 10px;
+}
+.header4 a:hover{
+    height: fit-content;
+    width: fit-content;
+    background: aliceblue;
+    color: black;
+    border-radius: 3px 3px 0 0;
+    padding: 2px 5px 10px 5px;
+    transition: ease-in-out 0.8s;
+}
+
+.cartaoCarrefour {
+    display: flex;
+    gap: 5px;
+}
+
+.header5{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 0 235px;
+    
+}
+
+.header5 div{
+    display: flex;
+    align-items: center;
+
+}
+.header5>div>img{
+    width: 24px;
+}
+.header5>a>img{
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transform: rotate(270deg);
+}
+
+.carrosel1, .carrosel2, .carrosel3{
+    width: 80%;
+    margin: 10px 0px 0px 40px;
+}
+.imgCarro1 {
+    width: 1440px;
+}
+
+.line{
+    width: 100%;
+    display: block;
+    margin: 10px;
+    height: 1px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    
+}
+
+.imgBanner1{
+    display: flex;
+    justify-content: center;
+    
+}
+.imgBanner1 img{
+    border-radius: 5px;
+    
+}
+
+.imgMain2{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.imgMain2 img{
+    height: 360px;
+    width: 353px;
+    border-radius: 5px
+    
+}
+.main3-0{
+    margin: 30px 40px 0 40px;
+}
+.imgMain3{
+    margin-top: 15px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+
+.imgMain3 a{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+    
+}
+.textMain3{
+    
+    font-size: 24px;
+    color: rgb(27, 27, 158);
+}
+.logoMain3{
+    background-size: cover;
+    height: 125px;
+    width: 125px;
+
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 100px;
+}
+.ancMain3:hover .logoMain3 {
+border: 1px solid blue;
+box-shadow: 1px 1px 1em black;
+transform: scale(1.1);
+}
+.ancMain3:hover p{
+    color: blue;
+    
+}
+/* teste de esmaecer itens adijacentes - */
+/* .imgMain3 ul:hover li{
+    opacity: 0.3;
+}
+.imgMain3 ul li:hover {
+    opacity: 1;
+} */
+
+.imgMain3:hover .ancMain3{
+    /* opacity: 0.3; */
+    filter: blur(5px);
+    transition: 0.95s ease-in-out;
+}
+
+.imgMain3 .ancMain3:hover{
+    /* opacity: 1; */
+    filter: blur(0px);
+    transition: 0s;
+}
+
+
+
+
+.logo1Main3{
+    background-image: url(./imgs/main3-1.png);
+}
+.logo2Main3{
+    background-image: url(./imgs/main3-2.webp);
+}
+.logo3Main3{
+    background-image: url(./imgs/main3-3.webp);
+}
+.logo4Main3{
+    background-image: url(./imgs/main3-4.webp);
+}
+.logo5Main3{
+    background-image: url(./imgs/main3-5.webp);
+}
+.logo6Main3{
+    background-image: url(./imgs/main3-6.webp);
+}
+.logo7Main3{
+    background-image: url(./imgs/main3-7.webp);
+}
+.logo8Main3{
+    background-image: url(./imgs/main3-8.webp);
+}
+
+.textoMain4{
+    margin: 0 0 15px 40px;
+    font-size: 24px;
+    color: rgb(27, 27, 158);
+}
+
+.imgMain4{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.ofertaMain4{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.imgMain4Oferta1{
+    background-image: url(./imgs/main4-1.webp);
+    width: 475px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    border-radius: 5px;
+}
+.imgMain4Oferta2{
+    background-image: url(./imgs/main4-2.webp);
+    width: 475px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    border-radius: 5px;
+}
+.imgMain4Oferta3{
+    background-image: url(./imgs/main4-3.webp);
+    width: 475px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.imgMain5{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.imgMain5 img{
+    border-radius: 5px;
+    
+}
+
+.main5p{
+    display: flex;
+    margin: 0 40px 0 40px;
+    justify-content: space-between;
+    color: rgb(27, 27, 158);
+}
+.main5p p{
+    font-size: 24px;
+}
+
+.main5Ofertas{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.oferta1{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.oferta1 img{
+    width: 350px;
+    height: 350px;
+    
+}
+.oferta2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    
+}
+
+.oferta3{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.main5img1 img{
+/*     background-image: url(./imgs/main5-1.webp);
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-position-x: center;
+    background-size: 500px 350px; */
+    object-fit: cover;
+}
+.main5img2 img{
+  /*   background-image: url(./imgs/main5-2.webp);
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-position-x: center;
+    background-size: 500px 350px; */
+    object-fit: cover;
+}
+
+
+
+
+
+
+.oferta3 img{
+    height: 170px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size:inherit;
+} 
+
+
+
+.imgOferta2{
+    width: 710px;
+    height: 170px;
+    object-fit: cover;
+}
+
+
+
+
+
+.imgMain6{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 24px 0 24px 0;  
+    flex-wrap: wrap;
+}
+
+
+.imgMain6 img{
+    width: 280px; 
+}
+.textMain6{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 40px;
+    justify-content: space-between;
+    color: rgb(27, 27, 158);
+   
+}
+.textMain6 p{
+    font-size: 24px;
+}
+.imgsMain6{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.regrasPromo{
+    border: 1px solid blue;
+    border-radius: 5px;
+    height: 36px;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: auto;
+
+}
+
+.regrasPromo a{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: blue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer1{
+    display: flex;
+    gap: 30px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkFooter{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.texto{
+    
+    width: 180px;
+}
+.paragrafo1{
+    font-size: 14px;
+    font-weight: bold;
+}
+.paragrafo2{
+font-size: 12px;
+font-weight: lighter;
+color: gray;
+margin-top: 5px;
+}
+
+.footer2 img{
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+    
+}
+
+
+.footer3{
+    width: 80%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin: 24px 0px 24px 0px;
+    justify-content: center;
+}
+
+.colun{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 190px;
+    
+}
+.colun a{
+    text-decoration: none;
+    
+}
+.titleFooter3{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+.normal{
+    font-size: 14px;
+    color: gray;
+}
+
+.marketplaceFooter{
+    color: blue;
+    font-size: 18px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 36px;
+    width: 200px;
+    
+    font-size: 15px;
+}
+
+.textoColun{
+    font-size: 12px;
+}
+.textoColun1{
+    font-weight: bold;
+}
+
+.footer4{
+    padding:15px 250px 15px 235px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pagamentos>p{
+    margin-bottom: 5px;
+}
+.pagamentos img{
+    height: 24px;
+    width: 28px;
+}
+
+.debt{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.textoFooter1{
+    font-weight: bold;
+    
+    
+}
+
+.redes>p{
+    margin-bottom: 15px;
+}
+.redes>div{
+    display: flex;
+    gap: 24px;
+}
+.redes img{
+    width: 26px;
+    height: 24px;
+}
+
+
+.footer5{
+    background-color: rgb(242,242,242);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 250px 30px 235px;
+
+}
+.textFooter{
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+}
+.textunidos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seguro{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+.im1{
+height: 35px;
+width:90px;
+}
+.im2{
+width: 70px;
+height:100px ;
+}
+
+.sitemap{
+    text-align: center;
+    margin: 25px;
+   
+}
+.sitemap a{
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1025){
+.imagemOferta{
+    background-image: url(https://carrefourbr.vtexassets.com/assets/vtex.file-manager-graphql/images/e60a756b-c11d-418a-a86d-39b3263510cd___031bec64f05d8ae01b328d86bd62ca90.png);
+    height: 150px;
+    width: 923px;
+}  
+main{
+    background-color: black;
+}
+}
