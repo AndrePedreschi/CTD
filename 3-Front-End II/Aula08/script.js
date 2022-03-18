@@ -71,8 +71,13 @@ changeColor.onmouseout = function () {
 
 //Exercício 5
 //Faça um trecho de código que utilize algum evento de teclado, esse evento irá escrever o conteúdo do input em uma tag <p> e logo abaixo o número de vezes que esse evento foi chamado. Exemplo: <p>futebol</p> <p>7</p> .
-
-
+let countador = 0;
+let key=document.getElementById('keydown');
+onkeydown = function(){
+    countador++;
+    key.innerHTML = 'Foram ' + countador + 'x teclas apertadas em seu teclado!';
+    
+}
 
 
 
