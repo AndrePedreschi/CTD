@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -7,78 +7,219 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Document</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <title>Cards Gamers</title>
+
+
+  <!-- Icons Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+  <!-- CSS modal -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+  <link rel="stylesheet" href="modal/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/form-elements.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link rel="shortcut icon" href="modal/ico/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="modal/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="modal/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="modal/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="modal/ico/apple-touch-icon-57-precomposed.png">
 
 
 </head>
 
 <body>
-  <button data-bs-toggle="modal" href="#modalCards">Adicionar Card</button>
+  <header>
+    <img class="banner" src="./img/banner.jpg" alt="foto de um gatinho curioso cheirando uma caneca de café">
+  </header>
+  <h2 class="h2text">Cards Gamers</h2>
+  <div class="flex-container">
+
+    <div class="item-img">
+      <img class="rounded-circle" src="./img/Juli.jpg">
+      <h5>Juliane Alves</h5>
+    </div>
+
+    <div class="item-img">
+      <img class="rounded-circle" src="./img/Andre.jpg">
+      <h5>André Pedreschi</h5>
+    </div>
+    <div class="item-img">
+      <img class="rounded-circle" src="./img/jaque.jpg">
+      <h5>Jaqueline Silva</h5>
+    </div>
+
+  </div>
+  <button data-bs-toggle="modal" href="#modalCards" class="btn-modal">Adicionar Card</button>
 
   <div class="modal" id="modalCards" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">Cards Gamers</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+
+
         <div class="modal-body">
-          <form>
-            <div>
-              <label for="name">Digite o nome do jogo</label>
-              <input type="text" name="name" id="name">
+
+          <form class="registration-form">
+            <div class="form-group">
+              <label class="sr-only" for="name">Digite o nome do Jogo</label>
+              <input type="text" name="name" placeholder="Nome do Jogo..." class="name form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="imagem">URL da Imagem</label>
+              <input type="text" name="imagem" placeholder="URL..." class="imagem form-control" id="imagem">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="descricao">Descrição do Jogo</label>
+              <textarea class="descricao form-control" name="descricao" id="descricao" placeholder="Descrição..."
+                cols="30" rows="10"></textarea>
+
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="valor">Digite o valor do jogo</label>
+              <input type="number" name="valor" placeholder="Valor do jogo..." class="valor form-control"
+              id="valor">
             </div>
 
-            <div>
-              <label for="image">URL da Imagem</label>
-              <input type="text" name="imagem" id="imagem">
-            </div>
-
-            <div>
-              <label for="descricao">Descrição do Jogo</label>
-              <input type="text" name="descricao" id="descricao">
-            </div>
-
-            <div>
-              <label for="valor">Digite o valor do jogo</label>
-              <input type="text" name="valor" id="valor">
-            </div>
-
-            <div>
-              <label for="quantidade">Digite a quantidade em estoque</label>
-              <input type="text" name="quantide" id="quantidade">
+            <div class="form-group">
+              <label class="sr-only" for="quantidade">Digite a quantidade</label>
+              <input type="number" name="quantidade" placeholder="A quantidade é..." class="quantidade form-control"
+                id="quantidade"></input>
             </div>
           </form>
-       
+
+
+          <div class="modal-button">
+
+            <button class="btn" onclick="adicionar()">Adicionar card</button>
+
+            <button type="button" class="btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="submit" class="btn btn-primary" onclick="adicionar()">Adicionar card</button>
-        </div>
+
+
       </div>
     </div>
   </div>
 
+  <div id="container">
 
 
-  <div id="container"></div>
+    <div class="msg1" id="msg">
+      <div class="msg">
+        <h3>HMM...ESTÁ MEIO VAZIO AQUI, NÃO ACHA?</h3>
+        <h4>QUE TAL TENTAR CADASTRAR UM JOGO?</h4>
+        <h5>TENHO CERTEZA QUE FICARÁ MUITO LEGAL!</h5>
+      </div>
+      <img class="img" src="./img/img-container.png">
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer class="container-fluid bg-dark" id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- FOOTER TOP -->
+        <div class="col-12" id="footer-top">
+
+          <div class="col-12" id="footer-details">
+            <div class="row">
+
+              <div class="col-12 col-md-4" id="news-container">
+                <div class="colum" class="col-4" id="social-icons">
+                  <h4>Juliane alves</h4>
+
+                  <a target="_blank" href="https://www.instagram.com/juli.coding/"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://github.com/julisevla3"><i class="bi bi-github"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/juliane-alves-43b15987/"><i
+                      class="bi bi-linkedin"></i></a>
 
 
 
-  <!-- <div class="card" style="width: 18rem;">
-        <img src="https://ogimg.infoglobo.com.br/in/23001849-c2f-667/FT1086A/INFOCHPDPICT000041975439.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h1>Nome</h1>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p>valor</p>
-          <p>quantidade</p>
-        </div>
-      </div> -->
+
+
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4" id="contact-container">
+
+                <div class="colum" class="col-4" id="social-icons">
+                  <h4>André Pedreschi</h4>
+
+
+                  <a target="_blank" href="https://www.instagram.com/major_p9/"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://github.com/AndrePedreschi
+                  "><i class="bi bi-github"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/andrepedreschi/
+                  "><i class="bi bi-linkedin"></i></a>
+
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="colum" class="col-4" id="social-icons">
+                  <h4>Jaqueline Silva</h4>
+
+                  <a target="_blank" href="https://www.instagram.com/jaquelinescello/"><i class="bi bi-instagram"></i></a>
+                  <a target="_blank" href="https://http.cat/404"><i class="bi bi-github"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/jaquesc/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+
+              <!-- FOOTER BOTTOM -->
+              <div class="col-12" id="footer-bottom">
+                <div class="row justify-content-between">
+
+                  <div class="col-12 col-md-3">
+                    <p class="secondary-color">Cards Gamers &copy; 2022
+                      <i class="bi bi-heart"></i>
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+  </footer>
+
+
+  <!-- Javascript Modal -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <!-- JavaScript Bootstrap -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- JS main -->
+  <script src="js/script.js" defer></script>
+
+
 </body>
 
 </html>

@@ -8,19 +8,17 @@ let qtd=document.getElementById('quantidade').value;
 
     let novaDiv = document.createElement('div');
     novaDiv.innerHTML = `
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 40rem;">
         <img src="${url}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h1>${nome}</h1>
                 <p class="card-text">${desc}</p>
-                <p>${"R$:"+valor+",00"}</p>
-                <p>"Quantidade em estoque: "${qtd}</p>
+                <p>${"R$"+valor+",00"}</p>
+                <p>Em estoque: ${qtd}</p>
             </div>
         </div>`
 
-    //container.insertBefore(novaDiv,container.firstChild); //Os cards acabam ficando na ordem trocada
-    //container.insertBefore(novaDiv,container.lastElementChild); //Acerta a ordem dos cards
-    // container.insertBefore(novaDiv,container.lastChild);
+   
+    document.getElementById('msg').classList.add('hide');
     container.appendChild(novaDiv.lastChild); //adiciona sem quebrar a formatação do css
-    // container.appendChild(novaDiv); 
-};
+    };
