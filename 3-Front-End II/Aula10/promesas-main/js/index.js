@@ -79,8 +79,8 @@ consultandoBaseDeDados
     .then((resposta) => {
         /* let resultadoJS=JSON.parse(resposta)
         console.log(resultadoJS); */
-        renderizarDadosUsuario(resposta.resultado)
-        console.log(resposta.resultado[0].email);
+        renderizarDadosUsuario(resposta.resultado[0])
+        //console.log(resposta.resultado[0]);
         
     }).catch((err) => {
         console.log(err);
@@ -93,10 +93,40 @@ function renderizarDadosUsuario(dados) {
     //  Isso deve ser baseado nas informações que chegam até nós e  são inseridas no HTML.
     //  Dica: você pode manipular o CSS e estruturar o card ao seu gosto.
 
+//console.log(dados.imagem.grande);
+//console.log(dados.nome.primeiro +" "+dados.nome.utlimo);
+//console.log(dados.email);
 
-//console.log(dados.nome);
+let base=document.querySelector(".tarjeta")
+//console.log(base);
+/* base.style.display='flex'
+base.style.align_items='center'
+base.style.justify_content='center' */
 
+let novaDiv = document.createElement('div');
+    novaDiv.innerHTML=`
+    <div class="item">
+        <img src=${dados.imagem.grande}>
+            <h2>${dados.nome.primeiro +" "+dados.nome.utlimo}</h2>
+            <p>${"Email: "+ dados.email}</p>
+    </div>`
+
+base.appendChild(novaDiv.lastChild);
+//base.classList.add('tarjeta')
+document.querySelector(".tarjeta div").classList.add('card')
+
+/* novaDiv.style.display='flex'
+novaDiv.style.flexDirection='column'
+novaDiv.style.align_Items='center'
+novaDiv.style.justify_Content='center' */
 
 
 }
 
+/*   
+    //container.insertBefore(novaDiv,container.firstChild); //Os cards acabam ficando na ordem trocada
+    //container.insertBefore(novaDiv,container.lastElementChild); //Acerta a ordem dos cards
+    // container.insertBefore(novaDiv,container.lastChild);
+    container.appendChild(novaDiv.lastChild); //adiciona sem quebrar a formatação do css
+    // container.appendChild(novaDiv); 
+*/
