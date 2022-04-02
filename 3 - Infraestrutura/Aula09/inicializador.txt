@@ -1,0 +1,1 @@
+docker container run -d --name spaghettidocker -p 80:80 nidio/spaghettidocker

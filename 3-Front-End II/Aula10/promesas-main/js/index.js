@@ -94,17 +94,24 @@ function renderizarDadosUsuario(dados) {
 
 let base=document.querySelector(".tarjeta")
 
-let novaDiv = document.createElement('div');
-    novaDiv.innerHTML=`
+//let novaDiv = document.createElement('div');
+    base.innerHTML=`
     <div class="item">
         <img src=${dados.imagem.grande}>
             <h2>${dados.nome.primeiro +" "+dados.nome.utlimo}</h2>
             <p>${"Email: "+ dados.email}</p>
     </div>`
 
-base.appendChild(novaDiv.lastChild);
+//base.appendChild(novaDiv.lastChild);
 
 document.querySelector(".tarjeta div").classList.add('card')
 
 }
 
+
+
+
+/* --------------------------- Tarefa 2 (extra) --------------------------- */
+// Aqui você pode ir para o ponto extra de usar o botão que está comentado no HTML.
+// Você pode descomentar o código no index.html e usar esse botão para executar uma nova solicitação API, sem recarregar a página.
+// Cabe aos desenvolvedores decidirem qual bloco de código deve ser contido dentro de uma função para que ele possa ser executado toda vez que um clique de botão for realizado.
