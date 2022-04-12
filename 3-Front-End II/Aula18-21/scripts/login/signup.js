@@ -46,7 +46,7 @@ botaoCriarConta.addEventListener('click', function(evento){
        
 
         //Populando o objeto com as informações normalizadas
-        usuarioObjeto.firstName = campoEmailNormalizado;
+        usuarioObjeto.firstName = campoNomeNormalizado;
         usuarioObjeto.lastName = campoSobrenomeNormalizado;
         usuarioObjeto.email = campoEmailNormalizado;
         usuarioObjeto.password = campoSenhaNormalizado;
@@ -65,28 +65,46 @@ botaoCriarConta.addEventListener('click', function(evento){
 
         fetch(endPointLogin, configuracaoRequisicao).then(
             resultado=>{
-                return resultado.json();
+                if(resultado.status == 201){
+                    return resultado.json();
+                }
+                throw resultado;
         }).then(
             resultado =>{
-                console.log(resultado);
+                cadastroSucesso(resultado.jwt)
+                
 
             }).catch(
             erro=>{
-                console.log(erro);
-                if(erro=400){
-                    alert("Usuário já cadastrado")
-                    //document.getElementById('erro400')=this.innerText = "Usuário já cadastrado";
-                }
+                cadastroErro(erro)
+                
             });
 
-        //evento.preventDefault();
+        
 
     } else {
         alert("Todos os campos devem ser informados")
         evento.preventDefault(); //Não permite que o formulário seja executado / realizado o 'submit'
     }
-
 });
+
+function cadastroSucesso(jsonRecebido){
+    console.log("Json recebido ao cadastrar");
+    console.log(jsonRecebido);
+    alert("Usuário cadastrado com sucesso")
+    window.location.href = "index.html"
+}
+
+function cadastroErro(statusRecebido){
+    console.log("Erro ao cadastrar");
+    console.log(statusRecebido);
+    if(erro.status==400){
+        alert("Usuário já cadastrado")
+        
+    }
+}
+
+
 
 //Validando o campo do Nome
 campoNome.addEventListener('blur', function(){
@@ -273,27 +291,3 @@ function validacaoTelaDeSignup () {
 }
 
 
-
-/* let endPointLogin = "https://ctd-todo-api.herokuapp.com/v1/users/login";
-let loginUsarioJson = JSON.stringify(usuarioObjeto);
-let configuracaoRequisicao = {
-        method: 'POST',
-        body: loginUsarioJson,
-        headers: {
-            'content-type': 'application/json'
-    }
-}
-
-fetch(endPointLogin, configuracaoRequisicao).then(
-    resultado=>{
-        return resultado.json();
-    }
-).then(
-    resultado =>{
-        console.log(resultado);
-    }
-).catch(
-    erro=>{
-        console.log(erro);
-    }
-); */

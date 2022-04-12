@@ -43,27 +43,57 @@ botaoAcessar.addEventListener('click', function(evento){
 
         fetch(endPointLogin, configuracaoRequisicao).then(
             resultado=>{
-                return resultado.json();
+                if(resultado.status ==201){
+                    return resultado.json();                    
+                }
+                throw resultado;
         }).then(
             resultado =>{
-                console.log(resultado);
+                loginSucesso(resultado.jwt)
 
             }).catch(
             erro=>{
-                console.log(erro);
+                loginErro(erro.status)
 
             });
-
-      
-
         evento.preventDefault();
 
     } else {
         alert("Ambos os campos devem ser informados")
         evento.preventDefault(); //Não permite que o formulário seja executado / realizado o 'submit'
     }
-
 });
+
+function loginSucesso(jwtRecebido) {
+    console.log("Jason recebido");
+    //console.log(jwtRecebido);
+    localStorage.setItem("jwt",jwtRecebido);
+
+    alert("Usuário logado com sucesso")
+    location.href = "tarefas.html"
+}
+function loginErro(statusRecebido){
+
+    //let loginValidacao=document.getElementById("loginValidacao");
+    //elementoSmallErro(loginValidacao);
+
+    //Limpa o campo da senha ao errar o login
+    campoSenhaLogin.value = "";
+    console.log(statusRecebido);
+
+    if (statusRecebido == 400 || statusRecebido == 404) {
+        console.log("Ocorreu algum erro, verifique o email e/ou senha");
+        //loginApiValidacao = false;
+    }/* else{
+        loginValidacao=true;
+    } */
+
+    validacaoTelaDeLogin();
+}
+
+
+
+
 
 //Validando o campo de Email
 campoEmailLogin.addEventListener('blur', function() {
@@ -141,26 +171,3 @@ function validacaoTelaDeLogin () {
 
 
 
-/* let endPointLogin = "https://ctd-todo-api.herokuapp.com/v1/users/login";
-let loginUsarioJson = JSON.stringify(usuarioObjeto);
-let configuracaoRequisicao = {
-        method: 'POST',
-        body: loginUsarioJson,
-        headers: {
-            'content-type': 'application/json'
-    }
-}
-
-fetch(endPointLogin, configuracaoRequisicao).then(
-    resultado=>{
-        return resultado.json();
-    }
-).then(
-    resultado =>{
-        console.log(resultado);
-    }
-).catch(
-    erro=>{
-        console.log(erro);
-    }
-); */
