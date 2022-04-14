@@ -66,10 +66,29 @@ function finalizarSessao(){
 
 
 //Criar uma Tarefa
-let tarefaJson={
-    "description": "Aprender Front end III",
-    "completed": false
-  }
+
+botaoCadastrar = document.getElementById("addTarefas");
+botaoCadastrar.addEventListener('click',evento=>{
+evento.preventDefault();
+
+let descricaoTarefa=document.getElementById('novaTarea');
+let radioGrupo=document.getElementsByName('grupoRadio');
+let radioSelecionado;
+
+if(descricaoTarefa!=""){
+
+    radioGrupo.forEach(radio=>radioSelecionado=radio.checked);
+    const tarefaJson={
+        description: descricaoTarefa.value,
+        completed: radioSelecionado
+      }
+}
+
+
+
+
+
+
 let tarefa = JSON.stringify(tarefaJson)
   let endPointRegistrarTarefas = "https://ctd-todo-api.herokuapp.com/v1/tasks";
 
@@ -116,7 +135,14 @@ let tarefa = JSON.stringify(tarefaJson)
 
 
 
-function addTarefas(){
+})
+
+
+
+
+
+
+/* function addTarefas(){
     let skeleton = document.getElementById('skeleton');
     let novaTarefa = document.getElementById('novaTarea').innerText;
 
@@ -132,9 +158,43 @@ function addTarefas(){
     
     skeleton.appendChild(tarefaADD);
 
-}
+} */
 
+let tarefasTerminadasdasUl = document.queryselector(".tarefas-terminadas");
 
+function renderizaTarefasTerminadas(tarefa) {
+    let liTarefaTerminada = document.createElement('li');
+    liTarefaTerminada.classlist.add("tarefa");
+    lilarefaTerminada.innerHIML =
+    `
+         <div class="not-done" id="${tarefa.id}"></div>
+         <div class="descricao">
+             <p class="nome">${tarefa.description}</p>
+             <p class-"timestamp"><i class-"far fa-calendar-alt"></i> ${tarefa.createdAt}
+         </div >
+ `
+            tarefasTerminadasdasUl.appendChild(liTarefaPendente);
+            //location.reload();
+
+    } 
+
+let tarefasPendentesUl = document.queryselector(".tarefas-pendentes")
+
+function renderizaTarefasPendentes(tarefa) {
+    let liTarefaPendente = document.createElement('li');
+    liTarefaPendente.classlist.add("tarefa");
+    lilarefaPendente.innerHIML =
+    `
+         <div class="not-done" id="${tarefa.id}"></div>
+         <div class="descricao">
+             <p class="nome">${tarefa.description}</p>
+             <p class-"timestamp"><i class-"far fa-calendar-alt"></i> ${tarefa.createdAt}
+         </div >
+ `
+            tarefasPendentesUl.appendChild(liTarefaPendente);
+            //location.reload();
+
+    } 
 
 
 
