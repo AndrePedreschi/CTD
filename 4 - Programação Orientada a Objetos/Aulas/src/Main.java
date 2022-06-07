@@ -9,5 +9,24 @@ public class Main {
         cliente.setDivida(5.0);
 
         System.out.println("Sua dívida é de "+ cliente.getDivida());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
 }
