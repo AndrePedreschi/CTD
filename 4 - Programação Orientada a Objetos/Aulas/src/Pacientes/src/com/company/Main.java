@@ -15,6 +15,7 @@ public class Main {
 
 
         try {
+            paciente.dataInternacao();
             paciente.darAlta(LocalDate.of(2021, 5, 10));
 
         } catch (DataInternacaoException | DataAltaException exception) {

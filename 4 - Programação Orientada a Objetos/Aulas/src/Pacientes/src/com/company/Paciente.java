@@ -1,6 +1,7 @@
 package Pacientes.src.com.company;
 
 import java.time.LocalDate;
+import java.time.chrono.ChronoLocalDate;
 
 
 public class Paciente {
@@ -15,11 +16,7 @@ public class Paciente {
         this.nome=nome;
         this.sobrenome=sobrenome;
         dataAlta=null;
-        if (dataInternacao.isBefore(hoje))
-            this.dataInternacao=dataInternacao;
-        else {
-            throw new DataInternacaoException();
-        }
+        this.dataInternacao=dataInternacao;
     }
 
     public LocalDate getDataInternacao() {
@@ -37,6 +34,14 @@ public class Paciente {
             throw new DataAltaException();
     }
 
+    public void dataInternacao () throws DataInternacaoException {
+
+        if (dataInternacao.isBefore(dataInternacao))
+            System.out.println("Maravilha");
+        else
+            throw new DataInternacaoException();
+
+    }
 
 
 }
