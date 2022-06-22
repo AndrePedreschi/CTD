@@ -1,0 +1,17 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calc.js",
+  "scripts": {
+    "test": "jest --watchAll --collect-coverage"
+    
+   
+  },
+  "author": "André Pedreschi",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}
+

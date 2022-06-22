@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1655862583565" clover="3.2.0">
+  <project timestamp="1655862583565" name="All files">
+    <metrics statements="15" coveredstatements="12" conditionals="10" coveredconditionals="5" methods="3" coveredmethods="3" elements="28" coveredelements="20" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+    <file name="util.js" path="C:\Users\Andre Rabelo\Desktop\CTD\4 - Testing I\programa-listas en javascript\util.js">
+      <metrics statements="15" coveredstatements="12" conditionals="10" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="19" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="22" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
