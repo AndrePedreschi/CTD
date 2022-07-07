@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220706 23:27:23.141" rpa="false" schemaversion="3">
+<suite id="s1" name="Exercicio" source="C:\Users\Andre Rabelo\Desktop\CTD\4 - Testing I\Automação de Teste\Exercicio\exercicio.robot">
+<test id="s1-t1" name="Processo de testes página Bugbank" line="6">
+<kw name="Abrir o site" library="exercicio">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 23:27:23.369" level="INFO">Opening browser 'Chrome' to base url 'https://bugbank.netlify.app/'.</msg>
+<status status="PASS" starttime="20220706 23:27:23.369" endtime="20220706 23:27:26.389"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 23:27:26.389" endtime="20220706 23:27:26.509"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.75</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220706 23:27:26.509" endtime="20220706 23:27:26.509"/>
+</kw>
+<status status="PASS" starttime="20220706 23:27:23.368" endtime="20220706 23:27:26.510"/>
+</kw>
+<kw name="Logar" library="exercicio">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_LOGIN}</arg>
+<arg>${LOGIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:27:26.511" level="INFO">Typing text 'a@a.com' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220706 23:27:26.510" endtime="20220706 23:27:28.891"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 23:27:28.891" level="INFO">Typing text '1234' into text field 'xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220706 23:27:28.891" endtime="20220706 23:27:31.260"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220706 23:27:31.260" endtime="20220706 23:27:32.801"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220706 23:27:32.802" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/div[2]/div/div[1]/form/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20220706 23:27:32.801" endtime="20220706 23:27:34.388"/>
+</kw>
+<status status="PASS" starttime="20220706 23:27:26.510" endtime="20220706 23:27:34.388"/>
+</kw>
+<kw name="Extrato" library="exercicio">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BTNEXTRATO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20220706 23:27:41.151" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220706 23:27:41.152" level="FAIL">Element 'id=btn-EXTRATO' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220706 23:27:34.390" endtime="20220706 23:27:41.154"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTNEXTRATO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220706 23:27:41.154" endtime="20220706 23:27:41.154"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SALDO1ID}</arg>
+<arg>${SALDO1TEXTO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20220706 23:27:41.154" endtime="20220706 23:27:41.154"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SALDO2ID}</arg>
+<arg>${SALDO2TEXTO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20220706 23:27:41.154" endtime="20220706 23:27:41.154"/>
+</kw>
+<status status="FAIL" starttime="20220706 23:27:34.389" endtime="20220706 23:27:41.155"/>
+</kw>
+<kw name="Sair" library="exercicio">
+<status status="NOT RUN" starttime="20220706 23:27:41.156" endtime="20220706 23:27:41.156"/>
+</kw>
+<status status="FAIL" starttime="20220706 23:27:23.367" endtime="20220706 23:27:41.156">Element 'id=btn-EXTRATO' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20220706 23:27:23.142" endtime="20220706 23:27:41.158"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Exercicio">Exercicio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
