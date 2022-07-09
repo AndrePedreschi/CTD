@@ -10,6 +10,8 @@ public class Armazem {
     public void addProduto(Produto produto){
         produtos.add(produto);
     }
+
+
     public void calcularEspacoNecessario(){
         for (Produto produto: produtos){
             volume += produto.calcularEspaco();

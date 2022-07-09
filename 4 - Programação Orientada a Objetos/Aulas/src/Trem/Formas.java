@@ -1,4 +1,6 @@
 package Trem;
 
-public class Formas {
+public abstract class Formas {
+
+    public abstract double calculaArea();
 }
