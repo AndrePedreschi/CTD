@@ -1,0 +1,26 @@
+1657756759252	geckodriver	INFO	Listening on 127.0.0.1:57968
+1657756762306	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57969" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileimmvKD"
+1657756762918	Marionette	INFO	Marionette enabled
+1657756762928	Marionette	INFO	Listening on port 57992
+WebDriver BiDi listening on ws://localhost:57969
+Read port: 57992
+1657756763422	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileimmvKD\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57969/devtools/browser/364f2b0c-32e5-4b77-a250-33ef7ebc941f
+1657756783910	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1657756797914	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1657756804866	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1657756812853	Marionette	INFO	Stopped listening on port 57992
+[Parent 7068, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

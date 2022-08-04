@@ -1,0 +1,13 @@
+1657756692621	geckodriver	INFO	Listening on 127.0.0.1:60000
+1657756695677	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60001" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileXzrfJx"
+1657756696266	Marionette	INFO	Marionette enabled
+1657756696275	Marionette	INFO	Listening on port 60010
+WebDriver BiDi listening on ws://localhost:60001
+Read port: 60010
+1657756696749	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileXzrfJx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60001/devtools/browser/8d8c7f99-ae7b-42a9-a104-c30a502da134
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1657756755015	Marionette	INFO	Stopped listening on port 60010
+[Parent 572, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+!!! error running onStopped callback: TypeError: callback is not a function

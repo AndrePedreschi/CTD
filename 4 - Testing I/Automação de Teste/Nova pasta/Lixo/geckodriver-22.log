@@ -1,0 +1,23 @@
+1657756116108	geckodriver	INFO	Listening on 127.0.0.1:64821
+1657756119163	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64822" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileioZDJR"
+1657756119785	Marionette	INFO	Marionette enabled
+1657756119795	Marionette	INFO	Listening on port 64832
+WebDriver BiDi listening on ws://localhost:64822
+Read port: 64832
+1657756120315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileioZDJR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64822/devtools/browser/29a57b21-d6bb-4109-8a71-5d675767f713
+1657756132867	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+5484/t.fileExists@https://cdn.pn.vg/push/ilabspush.min.js:1:143733
+_init@https://cdn.pn.vg/push/ilabspush.min.js:1:155351
+init@https://cdn.pn.vg/push/ilabspush.min.js:1:161947
+processPushes/<@https://cdn.pn.vg/push/ilabspush.min.js:1:185538
+processPushes@https://cdn.pn.vg/push/ilabspush.min.js:1:184800
+@https://cdn.pn.vg/push/ilabspush.min.js:1:187058
+@https://cdn.pn.vg/push/ilabspush.min.js:1:187241
+@https://cdn.pn.vg/push/ilabspush.min.js:1:187245
+1657756138542	Marionette	INFO	Stopped listening on port 64832

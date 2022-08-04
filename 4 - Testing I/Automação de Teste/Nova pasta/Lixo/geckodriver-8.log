@@ -1,0 +1,11 @@
+1657754054347	geckodriver	INFO	Listening on 127.0.0.1:53649
+1657754057394	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53650" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileQxQm0B"
+1657754057917	Marionette	INFO	Marionette enabled
+1657754057924	Marionette	INFO	Listening on port 65487
+WebDriver BiDi listening on ws://localhost:53650
+Read port: 65487
+1657754058940	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofileQxQm0B\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53650/devtools/browser/e12f89a9-e57f-4548-9859-dd19b625635f
+1657754096223	Marionette	INFO	Stopped listening on port 65487
+[Parent 3828, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

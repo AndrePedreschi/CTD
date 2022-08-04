@@ -1,0 +1,12 @@
+1657754941791	geckodriver	INFO	Listening on 127.0.0.1:50655
+1657754944858	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50656" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofilelKdpuj"
+1657754945401	Marionette	INFO	Marionette enabled
+1657754945408	Marionette	INFO	Listening on port 50667
+WebDriver BiDi listening on ws://localhost:50656
+Read port: 50667
+1657754945890	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ANDRER~1\\AppData\\Local\\Temp\\rust_mozprofilelKdpuj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50656/devtools/browser/82d6142a-c9b3-4f38-bf1f-70a73fd63c24
+JavaScript error: https://www.hurb.com/br/pay/checkout/62cf5572dd533d0700f09f5b line 504 > injectedScript, line 1: ReferenceError: product is not defined
+1657754996503	Marionette	INFO	Stopped listening on port 50667
+[Parent 15544, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
