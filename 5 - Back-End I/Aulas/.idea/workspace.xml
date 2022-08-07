@@ -4,82 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="566c17e4-836b-42ef-8639-dda086302091" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Aulas/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/Aulas.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/apiguardian-api-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/junit-jupiter-5.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/junit-jupiter-api-5.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/junit-jupiter-engine-5.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/junit-jupiter-params-5.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/junit-platform-commons-1.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/junit-platform-engine-1.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/lib/opentest4j-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula01_JUnit/Pessoa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula01_JUnit/PessoaTeste.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula02_DesignPattern/Contratado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula02_DesignPattern/Efetivo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula02_DesignPattern/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula02_DesignPattern/FuncionarioTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/CheckMail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/Gerenciador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/GerenciadorComercial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/GerenciadorGerencia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/GerenciadorSpam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/GerenciadorTecnico.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/Mail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Aula04_chain_of_responsibility/ProcessaMail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa01/Circulo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa01/Figura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa01/FiguraTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa01/Quadrado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa03/Afiliado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa03/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa03/MainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa03/Vendedores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/Artigo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/CheckQuality.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/Gerenciador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/GerenciadorArtigoOk.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/GerenciadorEmbalagem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/GerenciadorLote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/GerenciadorPeso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/out/production/Aulas/Mesa04/ProcessaQuality.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula01_JUnit/Pessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula01_JUnit/PessoaTeste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula02_DesignPattern/Contratado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula02_DesignPattern/Efetivo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula02_DesignPattern/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula02_DesignPattern/FuncionarioTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/CheckMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/Gerenciador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/GerenciadorComercial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/GerenciadorGerencia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/GerenciadorSpam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/GerenciadorTecnico.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/Mail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Aula04_chain_of_responsibility/ProcessaMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa01/Circulo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa01/Figura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa01/FiguraTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa01/Quadrado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa03/Afiliado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa03/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa03/MainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa03/Vendedores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/Artigo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/CheckQuality.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/Gerenciador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/GerenciadorArtigoOk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/GerenciadorEmbalagem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/GerenciadorLote.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/GerenciadorPeso.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aulas/src/Mesa04/ProcessaQuality.java" beforeDir="false" />
-    </list>
+    <list default="true" id="566c17e4-836b-42ef-8639-dda086302091" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +45,33 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
-  <component name="RunManager" selected="Application.ProcessaQuality">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula06.Main" />
+      <module name="Aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aula06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mesa06.Main" />
+      <module name="Aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mesa06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProcessaMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Aula04_chain_of_responsibility.ProcessaMail" />
       <module name="Aulas" />
@@ -147,46 +98,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FiguraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PessoaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mesa01.*" />
+          <option name="PATTERN" value="Aula05_ProxyPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Mesa01" />
-      <option name="MAIN_CLASS_NAME" value="Mesa01.FiguraTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FuncionarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Aulas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Aula02_DesignPattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Aula02_DesignPattern" />
-      <option name="MAIN_CLASS_NAME" value="Aula02_DesignPattern.FuncionarioTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Aulas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Mesa03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Mesa03" />
-      <option name="MAIN_CLASS_NAME" value="Mesa03.MainTest" />
+      <option name="PACKAGE_NAME" value="Aula05_ProxyPattern" />
+      <option name="MAIN_CLASS_NAME" value="Aula05_ProxyPattern.PessoaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PessoaTest" />
         <item itemvalue="Application.ProcessaQuality" />
         <item itemvalue="Application.ProcessaMail" />
-        <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.FuncionarioTest" />
-        <item itemvalue="JUnit.FiguraTest" />
       </list>
     </recent_temporary>
   </component>
