@@ -13,6 +13,5 @@ public class ServicoVacinarProxy implements Vacinar{
          }else{
              System.out.println("A data de hoje é anterior a data marcada");
          }
-
     }
 }
