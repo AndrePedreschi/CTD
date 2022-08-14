@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -39,19 +39,19 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/h2-2.1.214.jar" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
-  <component name="RunManager" selected="JUnit.UsuarioTest">
+  <component name="RunManager" selected="Application.Main (5)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Aula06.Main" />
+      <option name="MAIN_CLASS_NAME" value="Mesa10.Main" />
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Aula06.*" />
+          <option name="PATTERN" value="Mesa10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +59,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Mesa06.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula11_Acesso_ao_BancoDeDados.Main" />
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mesa06.*" />
+          <option name="PATTERN" value="Aula11_Acesso_ao_BancoDeDados.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessaQuality" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Mesa04.ProcessaQuality" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula12_Integradora.Main" />
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mesa04.*" />
+          <option name="PATTERN" value="Aula12_Integradora.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,43 +85,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PessoaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mesa12.Main" />
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Aula05_ProxyPattern.*" />
+          <option name="PATTERN" value="Mesa12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Aula05_ProxyPattern" />
-      <option name="MAIN_CLASS_NAME" value="Aula05_ProxyPattern.PessoaTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mesa11.Main" />
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mesa05.*" />
+          <option name="PATTERN" value="Mesa11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Mesa05" />
-      <option name="MAIN_CLASS_NAME" value="Mesa05.UsuarioTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UsuarioTest" />
+        <item itemvalue="Application.Main (5)" />
+        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PessoaTest" />
-        <item itemvalue="Application.ProcessaQuality" />
       </list>
     </recent_temporary>
   </component>
@@ -146,5 +142,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -23,5 +23,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="apache-log4j-1.2" level="project" />
+    <orderEntry type="library" name="h2-2.1.214" level="project" />
   </component>
 </module>
