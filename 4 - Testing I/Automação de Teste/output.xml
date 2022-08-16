@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220706 22:18:13.807" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220814 17:55:14.240" rpa="false" schemaversion="3">
 <suite id="s1" name="Andre" source="C:\Users\Andre Rabelo\Desktop\CTD\4 - Testing I\Automação de Teste\Andre.robot">
 <test id="s1-t1" name="Processo de compra da loja Sauce Demo" line="9">
 <kw name="Abrir a loja" library="Andre">
@@ -7,136 +7,141 @@
 <arg>${SITE}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220706 22:18:14.315" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<status status="PASS" starttime="20220706 22:18:14.314" endtime="20220706 22:18:17.609"/>
+<msg timestamp="20220814 17:55:14.678" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20220814 17:55:14.677" endtime="20220814 17:55:18.096"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220706 22:18:17.610" endtime="20220706 22:18:17.759"/>
+<status status="PASS" starttime="20220814 17:55:18.096" endtime="20220814 17:55:18.231"/>
 </kw>
-<status status="PASS" starttime="20220706 22:18:14.314" endtime="20220706 22:18:17.760"/>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.75</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220814 17:55:18.231" endtime="20220814 17:55:18.232"/>
+</kw>
+<status status="PASS" starttime="20220814 17:55:14.676" endtime="20220814 17:55:18.232"/>
 </kw>
 <kw name="Fazer login" library="Andre">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${CAMPO_LOGIN}</arg>
 <arg>${LOGIN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:17.762" level="INFO">Typing text 'standard_user' into text field 'css=#user-name'.</msg>
-<status status="PASS" starttime="20220706 22:18:17.761" endtime="20220706 22:18:17.909"/>
+<msg timestamp="20220814 17:55:18.234" level="INFO">Typing text 'standard_user' into text field 'css=#user-name'.</msg>
+<status status="PASS" starttime="20220814 17:55:18.233" endtime="20220814 17:55:20.585"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${CAMPO_SENHA}</arg>
 <arg>${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:17.910" level="INFO">Typing text 'secret_sauce' into text field 'css=#password'.</msg>
-<status status="PASS" starttime="20220706 22:18:17.909" endtime="20220706 22:18:18.048"/>
+<msg timestamp="20220814 17:55:20.586" level="INFO">Typing text 'secret_sauce' into text field 'css=#password'.</msg>
+<status status="PASS" starttime="20220814 17:55:20.585" endtime="20220814 17:55:22.945"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BOTAO_LOGIN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.049" level="INFO">Clicking element 'css=#login-button'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.048" endtime="20220706 22:18:18.178"/>
+<msg timestamp="20220814 17:55:22.945" level="INFO">Clicking element 'css=#login-button'.</msg>
+<status status="PASS" starttime="20220814 17:55:22.945" endtime="20220814 17:55:24.579"/>
 </kw>
-<status status="PASS" starttime="20220706 22:18:17.761" endtime="20220706 22:18:18.178"/>
+<status status="PASS" starttime="20220814 17:55:18.232" endtime="20220814 17:55:24.580"/>
 </kw>
 <kw name="Selecionar um produto e colocar no carrinho" library="Andre">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PRODUTO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.180" level="INFO">Clicking element 'css=#item_4_title_link &gt; div'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.180" endtime="20220706 22:18:18.259"/>
+<msg timestamp="20220814 17:55:24.583" level="INFO">Clicking element 'css=#item_4_title_link &gt; div'.</msg>
+<status status="PASS" starttime="20220814 17:55:24.582" endtime="20220814 17:55:26.155"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ADICIONAR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.260" level="INFO">Clicking element 'css=#add-to-cart-sauce-labs-backpack'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.259" endtime="20220706 22:18:18.311"/>
+<msg timestamp="20220814 17:55:26.156" level="INFO">Clicking element 'css=#add-to-cart-sauce-labs-backpack'.</msg>
+<status status="PASS" starttime="20220814 17:55:26.155" endtime="20220814 17:55:27.705"/>
 </kw>
-<status status="PASS" starttime="20220706 22:18:18.179" endtime="20220706 22:18:18.311"/>
+<status status="PASS" starttime="20220814 17:55:24.581" endtime="20220814 17:55:27.705"/>
 </kw>
 <kw name="Abrir o carrinho e fazer o checkout" library="Andre">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${CARRINHO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220706 22:18:18.312" endtime="20220706 22:18:18.342"/>
+<status status="PASS" starttime="20220814 17:55:27.706" endtime="20220814 17:55:29.278"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CARRINHO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.343" level="INFO">Clicking element 'css=#shopping_cart_container &gt; a'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.343" endtime="20220706 22:18:18.407"/>
+<msg timestamp="20220814 17:55:29.279" level="INFO">Clicking element 'css=#shopping_cart_container &gt; a'.</msg>
+<status status="PASS" starttime="20220814 17:55:29.278" endtime="20220814 17:55:30.845"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CHECKOUT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.407" level="INFO">Clicking element 'css=#checkout'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.407" endtime="20220706 22:18:18.476"/>
+<msg timestamp="20220814 17:55:30.846" level="INFO">Clicking element 'css=#checkout'.</msg>
+<status status="PASS" starttime="20220814 17:55:30.845" endtime="20220814 17:55:32.405"/>
 </kw>
-<status status="PASS" starttime="20220706 22:18:18.312" endtime="20220706 22:18:18.476"/>
+<status status="PASS" starttime="20220814 17:55:27.706" endtime="20220814 17:55:32.405"/>
 </kw>
 <kw name="Preencher dados do cliente" library="Andre">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${NOME}</arg>
 <arg>André</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.478" level="INFO">Typing text 'André' into text field 'css=#first-name'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.478" endtime="20220706 22:18:18.629"/>
+<msg timestamp="20220814 17:55:32.406" level="INFO">Typing text 'André' into text field 'css=#first-name'.</msg>
+<status status="PASS" starttime="20220814 17:55:32.406" endtime="20220814 17:55:34.761"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${SOBRENOME}</arg>
 <arg>Pedreschi</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.630" level="INFO">Typing text 'Pedreschi' into text field 'css=#last-name'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.630" endtime="20220706 22:18:18.765"/>
+<msg timestamp="20220814 17:55:34.761" level="INFO">Typing text 'Pedreschi' into text field 'css=#last-name'.</msg>
+<status status="PASS" starttime="20220814 17:55:34.761" endtime="20220814 17:55:37.139"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${CEP}</arg>
 <arg>000000000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.766" level="INFO">Typing text '000000000' into text field 'css=#postal-code'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.765" endtime="20220706 22:18:18.892"/>
+<msg timestamp="20220814 17:55:37.140" level="INFO">Typing text '000000000' into text field 'css=#postal-code'.</msg>
+<status status="PASS" starttime="20220814 17:55:37.139" endtime="20220814 17:55:39.514"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CONTINUE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:18.893" level="INFO">Clicking element 'css=#continue'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.892" endtime="20220706 22:18:18.995"/>
+<msg timestamp="20220814 17:55:39.515" level="INFO">Clicking element 'css=#continue'.</msg>
+<status status="PASS" starttime="20220814 17:55:39.514" endtime="20220814 17:55:41.089"/>
 </kw>
-<status status="PASS" starttime="20220706 22:18:18.477" endtime="20220706 22:18:18.995"/>
+<status status="PASS" starttime="20220814 17:55:32.405" endtime="20220814 17:55:41.089"/>
 </kw>
 <kw name="Confirmar valor total e finalizar compra" library="Andre">
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${TOTAL}</arg>
 <arg>${TEXTO}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220706 22:18:19.043" level="INFO">Element 'css=#checkout_summary_container &gt; div &gt; div.summary_info &gt; div.summary_total_label' contains text '$32.39'.</msg>
-<status status="PASS" starttime="20220706 22:18:18.998" endtime="20220706 22:18:19.043"/>
+<msg timestamp="20220814 17:55:42.619" level="INFO">Element 'css=#checkout_summary_container &gt; div &gt; div.summary_info &gt; div.summary_total_label' contains text '$32.39'.</msg>
+<status status="PASS" starttime="20220814 17:55:41.090" endtime="20220814 17:55:42.619"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${FINISH}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220706 22:18:19.044" level="INFO">Clicking element 'css=#finish'.</msg>
-<status status="PASS" starttime="20220706 22:18:19.044" endtime="20220706 22:18:19.135"/>
+<msg timestamp="20220814 17:55:42.622" level="INFO">Clicking element 'css=#finish'.</msg>
+<status status="PASS" starttime="20220814 17:55:42.621" endtime="20220814 17:55:44.196"/>
 </kw>
-<status status="PASS" starttime="20220706 22:18:18.997" endtime="20220706 22:18:19.136"/>
+<status status="PASS" starttime="20220814 17:55:41.090" endtime="20220814 17:55:44.196"/>
 </kw>
 <kw name="Confirmar a compra" library="Andre">
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>${CONFIRMPATH}</arg>
 <arg>${TEXTOCONFIRM}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220706 22:18:19.141" level="FAIL">Variable '${TEXTOCONFIRM}' not found.</msg>
-<status status="FAIL" starttime="20220706 22:18:19.137" endtime="20220706 22:18:19.141"/>
+<msg timestamp="20220814 17:55:44.203" level="FAIL">Variable '${TEXTOCONFIRM}' not found.</msg>
+<status status="FAIL" starttime="20220814 17:55:44.199" endtime="20220814 17:55:44.203"/>
 </kw>
-<status status="FAIL" starttime="20220706 22:18:19.137" endtime="20220706 22:18:19.142"/>
+<status status="FAIL" starttime="20220814 17:55:44.198" endtime="20220814 17:55:44.204"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220706 22:18:19.144" endtime="20220706 22:18:21.397"/>
+<status status="PASS" starttime="20220814 17:55:44.205" endtime="20220814 17:55:47.101"/>
 </kw>
-<status status="FAIL" starttime="20220706 22:18:14.312" endtime="20220706 22:18:21.399">Variable '${TEXTOCONFIRM}' not found.</status>
+<status status="FAIL" starttime="20220814 17:55:14.676" endtime="20220814 17:55:47.102">Variable '${TEXTOCONFIRM}' not found.</status>
 </test>
-<status status="FAIL" starttime="20220706 22:18:13.812" endtime="20220706 22:18:21.403"/>
+<status status="FAIL" starttime="20220814 17:55:14.241" endtime="20220814 17:55:47.104"/>
 </suite>
 <statistics>
 <total>
@@ -149,6 +154,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220706 22:18:14.308" level="ERROR">Error in file 'C:\Users\Andre Rabelo\Desktop\CTD\4 - Testing I\Automação de Teste\Andre.resource' on line 21: Setting variable '${TEXTOCONFIRM} THANK YOU FOR YOUR ORDER' failed: Invalid variable name '${TEXTOCONFIRM} THANK YOU FOR YOUR ORDER'.</msg>
+<msg timestamp="20220814 17:55:14.674" level="ERROR">Error in file 'C:\Users\Andre Rabelo\Desktop\CTD\4 - Testing I\Automação de Teste\Andre.resource' on line 21: Setting variable '${TEXTOCONFIRM} THANK YOU FOR YOUR ORDER' failed: Invalid variable name '${TEXTOCONFIRM} THANK YOU FOR YOUR ORDER'.</msg>
 </errors>
 </robot>

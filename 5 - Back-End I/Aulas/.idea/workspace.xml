@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="566c17e4-836b-42ef-8639-dda086302091" name="Changes" comment="" />
+    <list default="true" id="566c17e4-836b-42ef-8639-dda086302091" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../4 - Testing I/Automação de Teste/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../4 - Testing I/Automação de Teste/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4 - Testing I/Automação de Teste/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../4 - Testing I/Automação de Teste/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../4 - Testing I/Automação de Teste/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../4 - Testing I/Automação de Teste/report.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +27,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Cm4gOPPJfJb2o5ffpVn9WI0RY5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,26 +52,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Mesa10.Main" />
+      <option name="MAIN_CLASS_NAME" value="Mesa13.Main" />
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mesa10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Aula11_Acesso_ao_BancoDeDados.Main" />
-      <module name="Aulas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Aula11_Acesso_ao_BancoDeDados.*" />
+          <option name="PATTERN" value="Mesa13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,13 +105,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula13_Consulta_Transacoes_BancosDeDados.Main" />
+      <module name="Aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Aula13_Consulta_Transacoes_BancosDeDados.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
