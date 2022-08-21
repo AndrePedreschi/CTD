@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Pessoa2Test" time="0.012" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Andre Rabelo\Desktop\CTD\5 - Back-End I\Aulas\target\test-classes;C:\Users\Andre Rabelo\Desktop\CTD\5 - Back-End I\Aulas\target\classes;C:\Users\Andre Rabelo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Andre Rabelo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Andre Rabelo\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\Andre Rabelo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Andre Rabelo\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Andre Rabelo\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\Andre Rabelo\AppData\Local\Temp\surefire6044030054752584553\surefirebooter17905977207968673302.jar C:\Users\Andre Rabelo\AppData\Local\Temp\surefire6044030054752584553 2022-08-21T19-15-11_336-jvmRun1 surefire4865636693613916241tmp surefire_07658142501213864212tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Andre Rabelo\Desktop\CTD\5 - Back-End I\Aulas\target\test-classes;C:\Users\Andre Rabelo\Desktop\CTD\5 - Back-End I\Aulas\target\classes;C:\Users\Andre Rabelo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Andre Rabelo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Andre Rabelo\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\Andre Rabelo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Andre Rabelo\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Andre Rabelo\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Andre Rabelo"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Andre Rabelo\Desktop\CTD\5 - Back-End I\Aulas"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Andre Rabelo\AppData\Local\Temp\surefire6044030054752584553\surefirebooter17905977207968673302.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+    <property name="user.name" value="Andre Rabelo"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Andre Rabelo\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ANDRER~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.3.2"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="C:\Users\Andre Rabelo\Desktop\CTD\5 - Back-End I\Aulas"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\HashiCorp\Vagrant\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\Andre Rabelo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Andre Rabelo\AppData\Local\Programs\Python\Python39\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Andre Rabelo\AppData\Local\Microsoft\WindowsApps;C:\Users\Andre Rabelo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\Andre Rabelo\AppData\Roaming\npm;C:\Chomedriver;C:\Program Files\nodejs;C:\geckodriver-v0.31.0-win64;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="imprimirObjetos" classname="Pessoa2Test" time="0.004">
+    <system-out><![CDATA[Pessoa{nome='Ivo', sobrenome='Ganda', idade=2016-03-23}
+Pessoa{nome='Ana', sobrenome='Musk', idade=1966-01-10}
+Pessoa{nome='Joe', sobrenome='Sacadas', idade=2010-06-13}
+Pessoa{nome='Rob', sobrenome='Varandas', idade=1986-05-11}
+Pessoa{nome='Ted', sobrenome='Santos', idade=2014-04-10}
+Pessoa{nome='Roberto', sobrenome='Silva', idade=2000-12-20}
+Pessoa{nome='Renata', sobrenome='Gomes', idade=2010-08-23}
+Pessoa{nome='Murilo', sobrenome='Seichas', idade=2015-09-22}
+Pessoa{nome='Candido', sobrenome='Portinari', idade=1975-09-12}
+Pessoa{nome='Camila', sobrenome='Pitanga', idade=2014-05-25}
+]]></system-out>
+  </testcase>
+  <testcase name="adicionarColecao" classname="Pessoa2Test" time="0.003">
+    <system-out><![CDATA[[Roberto]
+[Candido]
+]]></system-out>
+  </testcase>
+</testsuite>

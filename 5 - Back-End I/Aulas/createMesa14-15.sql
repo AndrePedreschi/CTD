@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS endereco (enderecoId INT AUTO_INCREMENT NOT NULL, rua VARCHAR(255), numero VARCHAR(10), cidade VARCHAR(255), bairro VARCHAR(255), PRIMARY KEY (enderecoId), FOREIGN KEY (enderecoId) REFERENCES endereco(enderecoId));
+CREATE TABLE IF NOT EXISTS paciente (pacienteId INT AUTO_INCREMENT NOT NULL, nome VARCHAR(255), sobrenome VARCHAR(255), rg VARCHAR(255), dataCadastro VARCHAR(255), enderecoId INT, PRIMARY KEY (pacienteId), FOREIGN KEY (enderecoId) REFERENCES endereco(enderecoId));
