@@ -42,6 +42,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Mesa19" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -60,13 +61,26 @@
       <recent name="Aula18" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mesa19.Main" />
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Mesa19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Mesa20.Main" />
+      <module name="Aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mesa20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +106,7 @@
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.meuProjeto.*" />
+          <option name="PATTERN" value="Aula21.meuProjeto.src.test.java.com.example.meuProjeto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,25 +114,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeuProjetoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Aulas" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Mesa18.*" />
+          <option name="PATTERN" value="Aula21.meuProjeto.src.test.java.com.example.meuProjeto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Mesa18" />
-      <option name="MAIN_CLASS_NAME" value="Mesa18.MainTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Pessoa2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Aulas" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Pessoa2Test" />
+      <option name="PACKAGE_NAME" value="Aula21.meuProjeto.src.test.java.com.example.meuProjeto" />
+      <option name="MAIN_CLASS_NAME" value="Aula21.meuProjeto.src.test.java.com.example.meuProjeto.MeuProjetoApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="JUnit.MeuProjetoApplicationTests" />
+        <item itemvalue="Application.MeuProjetoApplication" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MeuProjetoApplication" />
-        <item itemvalue="JUnit.MainTest (1)" />
-        <item itemvalue="JUnit.Pessoa2Test" />
       </list>
     </recent_temporary>
   </component>
