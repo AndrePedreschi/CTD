@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="566c17e4-836b-42ef-8639-dda086302091" name="Changes" comment="" />
+    <list default="true" id="566c17e4-836b-42ef-8639-dda086302091" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/dao/PacienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/dao/PacienteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/Dentist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/Dentist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/Pacient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/Specialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/Specialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas/src/main/java/Grupo04/ClinicaBocaDeLata/model/entities/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Mesa19" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/SistemaDeReservaDeConsultas" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,13 +62,27 @@
       <recent name="C:\Users\Andre Rabelo\Desktop\CTD\5 - Back-End I\Aulas\src\main\java\Mesa18" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="SistemaDeReservaDeConsultas.src.main.java.Grupo04.SistemaDeReservaDeConsultas.dao" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Aula18" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.AnimalApplication">
+    <configuration name="AnimalApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dh.animal.AnimalApplication" />
+      <module name="Aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dh.animal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mesa19.Main" />
       <module name="Aulas" />
@@ -81,19 +102,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Mesa20.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Aula19.Main" />
-      <module name="Aulas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Aula19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnimalApplication" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="JUnit.MeuProjetoApplicationTests" />
         <item itemvalue="Application.MeuProjetoApplication" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +163,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="AndreP" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
