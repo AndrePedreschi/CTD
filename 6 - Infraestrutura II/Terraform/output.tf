@@ -9,3 +9,7 @@ output "instancias_ec2-private" {
   //o * é para ficar dinâmico com a quantidade de máquinas
   //isso é para acharmos o ip das máquinas
 }
+
+output "instancias_ec2_ansible" {
+  value = aws_instance.andre_ec2_ansible.*.public_ip
+}

@@ -20,4 +20,19 @@ provider "aws" {
 # terraform show - mostra como está a sua infra
 
 # ssh -i pasta/nome-da-chave usuario@IP-ou-DNS
-# ssh -i .ssh/terraform-aws ubuntu@3.144.175.156
+# ssh -i ~/.ssh/terraform-aws ubuntu@
+
+
+ #apache ctl status
+ # systemctl status apache2
+#docker info
+
+#  #!/bin/bash
+#     sudo apt update
+#     sudo apt install apache2 -y
+
+
+# Host 3.18.221.245
+#   HostName 3.18.221.245
+#   IdentityFile .ssh/terraform-aws
+#   User ubuntu

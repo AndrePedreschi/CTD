@@ -4,8 +4,11 @@ import { SegundaAula } from './lessons/SegundaAula'
 import { TerceiraAula } from './lessons/TerceiraAula'
 import { QuartaAula } from './lessons/QuartaAula'
 import { QuintaAula } from './lessons/QuintaAula'
-
-
+import { CapivaraGames } from './pages/CapivaraGames'
+import { SetimaAula } from './lessons/SetimaAula'
+import { OitavaAula } from './lessons/OitavaAula'
+import { DecimaTerceiraAula } from './lessons/DecimaTerceiraAula'
+import { IntegradoraAula13 } from './pages/IntegradoraAula13'
 
 function App() {
 
@@ -15,8 +18,13 @@ function App() {
       {/* <Login /> */}
       {/* <SegundaAula /> */}
       {/* <TerceiraAula /> */}
-      <QuartaAula />
+      {/* <QuartaAula /> */}
       {/* <QuintaAula /> */}
+      {/* <CapivaraGames /> */}
+      {/* <SetimaAula /> */}
+      {/* <OitavaAula /> */}
+      {/* <DecimaTerceiraAula /> */}
+      <IntegradoraAula13 />
     </>
 
   )

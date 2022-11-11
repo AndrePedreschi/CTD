@@ -1,0 +1,8 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host 18.222.102.134
+    HostName 18.222.102.134
+    IdentityFile .ssh/terraform-aws
+    User ubuntu
+  
+
+  
