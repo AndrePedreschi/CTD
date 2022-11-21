@@ -9,6 +9,8 @@ import { SetimaAula } from './lessons/SetimaAula'
 import { OitavaAula } from './lessons/OitavaAula'
 import { DecimaTerceiraAula } from './lessons/DecimaTerceiraAula'
 import { IntegradoraAula13 } from './pages/IntegradoraAula13'
+import { DecimaQuartaAula } from './lessons/DecimaQuartaAula'
+import { DecimaQuintaAula } from './lessons/DecimaQuintaAula'
 
 function App() {
 
@@ -24,7 +26,9 @@ function App() {
       {/* <SetimaAula /> */}
       {/* <OitavaAula /> */}
       {/* <DecimaTerceiraAula /> */}
-      <IntegradoraAula13 />
+      {/* <IntegradoraAula13 /> */}
+      {/* <DecimaQuartaAula /> */}
+      <DecimaQuintaAula />
     </>
 
   )
