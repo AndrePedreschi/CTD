@@ -1,14 +1,18 @@
 import { useState, useEffect } from 'react'
 import { DecimaQuintaAulaItem } from '../../components/DecimaQuintaAulaItem'
+import { Link, useParams } from 'react-router-dom'
 import './style.scss'
 
 export function DecimaQuintaAula() {
-
 
     const [styleError, setStyleError] = useState({})
     const [locations, setLocations] = useState([])
     const [erroForm, setErroForm] = useState(false)
     const [cep, setCep] = useState('')
+
+    //Recebendo o parametro d url
+    const { id } = useParams()
+    console.log(id);
 
     function limparForm() {
         setCep('')
@@ -36,6 +40,14 @@ export function DecimaQuintaAula() {
     }
 
     useEffect(() => {
+
+        if(cep.length>8){
+            setCep(
+                cep.slice(0,8)
+            )
+        }
+
+
 
         if (cep.length == 8) {
             let cepReconstruido = `${cep.slice(0, 5)}-${cep.slice(5)}`
@@ -81,12 +93,13 @@ export function DecimaQuintaAula() {
     return (
         <div className="decima-quarta-aula-component">
             <form >
-                <h1>Cadastrar endereços</h1>
+                <h1>Cadastrar endereços {id}</h1>
                 <div>
                     <label>Cep</label>
                     <input
                         type="number"
                         value={cep}
+                        aria-label='cep'
                         onChange={event => setCep(event.target.value)}
                     />
                 </div>
@@ -101,7 +114,7 @@ export function DecimaQuintaAula() {
                             <DecimaQuintaAulaItem
                                 key={index}
                                 data={location}
-                                style={()=>style()}
+                                style={() => style()}
                                 onDeleteLocation={(currentLocation) => deleteLocation(currentLocation)}
                             />
                         )
@@ -109,6 +122,11 @@ export function DecimaQuintaAula() {
                     )
                 }
             </section>
+
+
+            <Link to="/DecimaQuartaAula">
+                <button>Aula Anterior</button>
+            </Link>
 
         </div>
 

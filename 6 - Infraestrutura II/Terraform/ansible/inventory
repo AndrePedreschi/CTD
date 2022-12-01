@@ -1,6 +1,10 @@
-[grupo]
-172.31.47.3 new_hostname=docker
-172.31.43.32 new_hostname=banana
+[banana]
+banana ansible_host=172.31.42.219 new_hostname=docker1
+
+
+[laranja]
+laranja ansible_host=172.31.35.66 new_hostname=docker2
+
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3 

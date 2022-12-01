@@ -1,0 +1,42 @@
+.main-layout-component {
+
+    .main-layout-component-header {
+
+        background-color: #404040 ;
+        padding: 42px;
+        margin-bottom: 12px;
+
+
+    }
+
+    .main-layout-component-main {
+        background-color: #505050;
+        padding: 42px;
+    }
+
+   
+    .listaLinks {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            .cardLink{
+                text-decoration: none;
+                background-color: rgb(74, 107, 117);
+                padding: 5px 12px;
+                border-radius: 6px;
+                
+            }
+            
+            
+            
+
+        }
+    }
+}

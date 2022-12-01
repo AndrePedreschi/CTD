@@ -29,6 +29,20 @@ resource "aws_security_group" "sg_acesso_web" {
         protocol = "tcp"
         cidr_blocks = [var.ip_internet]
     }
+
+    ingress {
+        from_port = 81
+        to_port = 81
+        protocol = "tcp"
+        cidr_blocks = [var.ip_internet]
+    }
+    ingress {
+        from_port = 443
+        to_port = 443
+        protocol = "tcp"
+        cidr_blocks = [var.ip_internet]
+    }
+
     tags = {
       "Name" = "${var.usuario}-sg_acesso_web"
     }

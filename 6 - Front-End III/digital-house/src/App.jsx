@@ -1,4 +1,7 @@
 //import { useState } from 'react'
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import { Login } from './pages/Login'
 import { SegundaAula } from './lessons/SegundaAula'
 import { TerceiraAula } from './lessons/TerceiraAula'
@@ -11,26 +14,90 @@ import { DecimaTerceiraAula } from './lessons/DecimaTerceiraAula'
 import { IntegradoraAula13 } from './pages/IntegradoraAula13'
 import { DecimaQuartaAula } from './lessons/DecimaQuartaAula'
 import { DecimaQuintaAula } from './lessons/DecimaQuintaAula'
+import { MainLayout } from "./components/MainLayout"
+import { JsonPlaceholder } from "./pages/JsonPlaceholder";
+import { JsonPlaceholderPostItem } from "./components/JsonPlaceholderPostItem";
+
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "",
+      element: <MainLayout />,
+      children: [
+        {
+          path: "/Login",
+          element: <Login />,
+        },
+        {
+          path: "/SegundaAula",
+          element: <SegundaAula />,
+        },
+        {
+          path: "/TerceiraAula",
+          element: <TerceiraAula />,
+        },
+        {
+          path: "/QuartaAula",
+          element: <QuartaAula />,
+        },
+        {
+          path: "/QuintaAula",
+          element: <QuintaAula />,
+        },
+        {
+          path: "/CapivaraGames",
+          element: <CapivaraGames />,
+        },
+        {
+          path: "/SetimaAula",
+          element: <SetimaAula />,
+        },
+        {
+          path: "/OitavaAula",
+          element: <OitavaAula />,
+        },
+        {
+          path: "/DecimaTerceiraAula",
+          element: <DecimaTerceiraAula />,
+        },
+        {
+          path: "/IntegradoraAula13",
+          element: <IntegradoraAula13 />,
+        },
+        {
+          path: "/DecimaQuartaAula",
+          element: <DecimaQuartaAula />,
+        },
+        {
+          path: "/DecimaQuintaAula",
+          element: <DecimaQuintaAula />,
+        },
+        {
+          //teste de paramentros
+          path: "/DecimaQuintaAula/:id",
+          element: <DecimaQuintaAula />,
+        },
+        {
+          path: "/RedeSocial",
+          element: <JsonPlaceholder /> ,
+          children:[
+            {
+              path: "/RedeSocial/Post/:id",
+              element: <JsonPlaceholderPostItem />,
+            },
+          ]
+        },
+      ]
+    },
+    
+
+  ]);
+
 
   return (
-    <>
-      {/* <Login /> */}
-      {/* <SegundaAula /> */}
-      {/* <TerceiraAula /> */}
-      {/* <QuartaAula /> */}
-      {/* <QuintaAula /> */}
-      {/* <CapivaraGames /> */}
-      {/* <SetimaAula /> */}
-      {/* <OitavaAula /> */}
-      {/* <DecimaTerceiraAula /> */}
-      {/* <IntegradoraAula13 /> */}
-      {/* <DecimaQuartaAula /> */}
-      <DecimaQuintaAula />
-    </>
-
+    <RouterProvider router={router} />
   )
 }
 

@@ -1,0 +1,9 @@
+select, option, button{
+    color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
