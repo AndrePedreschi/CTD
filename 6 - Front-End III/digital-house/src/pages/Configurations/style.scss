@@ -1,0 +1,41 @@
+.configurations-component {
+
+    form {
+        margin-top: 12px;
+        display: flex;
+        gap: 40px;
+        section {
+
+            select {
+                width: 200px;
+                color: black;
+            }
+
+            option {
+                color: black;
+            }
+
+        }
+
+        .acessibilidade{
+
+            div{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                gap: 12px;
+            }
+        }
+
+        .linguagem{
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+            }
+        }
+    }
+
+}

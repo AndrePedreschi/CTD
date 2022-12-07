@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react'
 import { DecimaQuintaAulaItem } from '../../components/DecimaQuintaAulaItem'
 import { Link, useParams } from 'react-router-dom'
 import './style.scss'
-
+import { useConfig } from '../../hooks/useConfigurations'
 export function DecimaQuintaAula() {
+
+    const { config } = useConfig()
 
     const [styleError, setStyleError] = useState({})
     const [locations, setLocations] = useState([])
@@ -91,7 +93,7 @@ export function DecimaQuintaAula() {
     } */
 
     return (
-        <div className="decima-quarta-aula-component">
+        <div className={`decima-quarta-aula-component ${config.theme}`}>
             <form >
                 <h1>Cadastrar endereços {id}</h1>
                 <div>

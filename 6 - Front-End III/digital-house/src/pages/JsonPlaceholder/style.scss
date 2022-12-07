@@ -2,8 +2,17 @@ select, option, button{
     color: black;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.main{
+
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    select{
+        width: 200px;
+    }
+    button{
+        width: fit-content;
+    }
 }

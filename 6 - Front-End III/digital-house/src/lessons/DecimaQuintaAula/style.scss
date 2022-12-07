@@ -4,6 +4,32 @@
     max-width: 1000px;
     margin: 32px auto;
     
+    &.dark {
+
+        form {
+
+            background-color: #303030;
+
+            h1 {
+
+                color: var(--color-text);
+
+            }
+
+        }
+
+    }
+
+    &.light {
+
+        form {
+
+            background-color: #bbbbbb;
+
+        }
+
+    }
+
     form {
         
         background-color: #303030;

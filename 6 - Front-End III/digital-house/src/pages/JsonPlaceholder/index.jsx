@@ -1,7 +1,7 @@
 import './style.scss'
 import { useState, useEffect } from "react";
 
-import { Link, Navigate, Outlet } from 'react-router-dom'
+import { Link, Navigate, Outlet, redirect } from 'react-router-dom'
 
 
 export function JsonPlaceholder() {
@@ -9,6 +9,7 @@ export function JsonPlaceholder() {
 
     const [usuarios, setUsuarios] = useState([])
     const [usuarioSelected, setUsuarioSelected] = useState(0)
+    const [login, setLogin] = useState(false)
     const [error, setError] = useState(false)
 
 
@@ -44,26 +45,35 @@ export function JsonPlaceholder() {
     }, [usuarioSelected])
 
 
+    function deslogar(){
+        setUsuarioSelected(0);
+        setLogin(false);
+        //return redirect("/RedeSocial");
+    }
 
     return (
-        <div>
+        <div className='main'>
             <header>
-                <h1>Usuário:</h1>
+                <h1>Usuário: {usuarioSelected ? usuarios[usuarioSelected - 1].name : ''}</h1>
 
-                <select value={usuarioSelected} onChange={event => setUsuarioSelected(event.target.value)}>
+                {!login && <select value={usuarioSelected} onChange={event => setUsuarioSelected(event.target.value)}>
                     <option defaultChecked value=''>Selecione um Usuário</option>
                     {usuarios.map((item, index) => (
                         <option key={index} value={item.id}>{item.name} </option>
                     ))}
                 </select>
+                }
 
-                {usuarioSelected > 0 && <Link to={`/RedeSocial/Post/${usuarioSelected}`}><button>Conectar com o usuário {usuarios[usuarioSelected-1].name}</button></Link>}
+                {usuarioSelected > 0 && !login && <Link to={`/RedeSocial/Post/${usuarioSelected}`}><button onClick={()=>setLogin(true)}>Conectar com o usuário {usuarios[usuarioSelected - 1].name}</button></Link>}
+
+                {/* {login && <button onClick={deslogar}>Desconectar {usuarioSelected ? usuarios[usuarioSelected - 1].name : ''}?</button>} */}
+                {login && <Link to={'/RedeSocial/'}><button onClick={deslogar}>Desconectar {usuarioSelected ? usuarios[usuarioSelected - 1].name : ''}?</button></Link>}
             </header>
-            
+
 
             <main>
-            < Outlet />
-                
+                < Outlet />
+
             </main>
 
         </div>

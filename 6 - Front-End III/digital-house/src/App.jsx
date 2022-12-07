@@ -16,8 +16,13 @@ import { DecimaQuartaAula } from './lessons/DecimaQuartaAula'
 import { DecimaQuintaAula } from './lessons/DecimaQuintaAula'
 import { MainLayout } from "./components/MainLayout"
 import { JsonPlaceholder } from "./pages/JsonPlaceholder";
-import { JsonPlaceholderPostItem } from "./components/JsonPlaceholderPostItem";
+import { JsonPlaceholderPostItem } from "./components/RedeSocial/JsonPlaceholderPostItem";
+import { ToDo } from "./pages/ToDo"
 
+import { ThemeProvider } from "./hooks/useTheme"
+import { Configurations } from "./pages/Configurations"
+import { LanguageProvider } from "./hooks/useLanguage"
+import { ConfigProvider } from "./hooks/useConfigurations";
 
 function App() {
 
@@ -81,23 +86,32 @@ function App() {
         },
         {
           path: "/RedeSocial",
-          element: <JsonPlaceholder /> ,
-          children:[
+          element: <JsonPlaceholder />,
+          children: [
             {
               path: "/RedeSocial/Post/:id",
               element: <JsonPlaceholderPostItem />,
             },
           ]
         },
+        {
+          path: '/Configurations',
+          element: <Configurations />
+        },
+        {
+          path: '/to-do',
+          element: <ToDo />
+        }
       ]
     },
-    
-
   ]);
 
 
   return (
-    <RouterProvider router={router} />
+    <ConfigProvider>
+      <RouterProvider router={router} />
+    </ConfigProvider>
+
   )
 }
 

@@ -1,0 +1,60 @@
+.cardsMain {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: fit-content;
+    border-radius: 12px;
+    border: 1px solid #151515;
+    background-color: #151515;
+    
+    .imgStyle {
+        width: 560;
+        height: 300;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .interno {
+        display: flex;
+        padding: 24px;
+        justify-content: space-between;
+
+        .dados {
+            
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                color: #FFFFFF;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #ffffff3b;
+            }
+        }
+
+        .preco {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            h1 {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 48px;
+                color: #FF7A00;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #ffffff3b;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

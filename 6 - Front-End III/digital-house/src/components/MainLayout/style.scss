@@ -1,6 +1,126 @@
 .main-layout-component {
 
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+    'header header'
+    'aside  main';
+    gap: 12px;
+
+// Estilização para o Modo Dark
+&.dark {
+
     .main-layout-component-header {
+
+        background-color: #404040;
+
+    }
+
+    .main-layout-component-aside {
+
+        background-color: #404040;
+
+    }
+
+    .main-layout-component-main {
+
+        background-color: #505050;
+
+    }
+
+}
+
+// Estilização para o Modo Light
+&.light {
+
+    .main-layout-component-header {
+
+        background-color: #818181;
+
+    }
+
+    .main-layout-component-aside {
+
+        background-color: #929292;
+
+    }
+
+    .main-layout-component-main {
+
+        background-color: #5c5c5c;
+
+    }
+
+}
+
+&.high-contrast{
+    .main-layout-component-header {
+        border-bottom: 1px solid #ffffff;
+        background-color: #000000;
+
+    }
+
+    .main-layout-component-aside {
+        border: 1px solid #ffffff;
+        background-color: #000000;
+
+    }
+
+    .main-layout-component-main {
+        border: 1px solid #ffffff;
+        background-color: #000000;
+
+    } 
+}
+.main-layout-component-header {
+
+    padding: 42px;
+    grid-area: header;
+
+}
+
+.main-layout-component-aside {
+
+    grid-area: aside;
+    margin-left: 12px;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+
+    ul {
+
+        list-style: none;
+        padding: 0;
+
+        a {
+
+            text-decoration: none;
+            opacity: .8;
+
+        }
+
+    }
+
+}
+
+.main-layout-component-main {
+
+    min-height: calc(100vh - 132px - 24px);
+    padding: 42px;
+    grid-area: main;
+    border-radius: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+
+}
+
+
+
+
+    /* .main-layout-component-header {
 
         background-color: #404040 ;
         padding: 42px;
@@ -38,5 +158,5 @@
             
 
         }
-    }
+    } */
 }

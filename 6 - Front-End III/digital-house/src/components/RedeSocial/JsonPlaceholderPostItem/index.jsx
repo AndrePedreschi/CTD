@@ -5,8 +5,11 @@ import { Link, useParams } from 'react-router-dom'
 export function JsonPlaceholderPostItem() {
     const [posts, setPosts] = useState([])
     const [albuns, setAlbuns] = useState([])
-    const [lista, setLista] = useState()
+    const [lista, setLista] = useState([])
+
     const { id } = useParams()
+
+
     //console.log(id);
 
     // /users/1/albums
@@ -29,7 +32,7 @@ export function JsonPlaceholderPostItem() {
     //     )
     // }, [])
 
-   
+
     function listarPostagens() {
         fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`).then(
             response => {
@@ -58,22 +61,22 @@ export function JsonPlaceholderPostItem() {
 
 
     useEffect(() => {
-        
-        if(posts.length>0){
+
+        if (posts.length > 0) {
             setLista(posts)
-        }else if(albuns.length>0){
+        } else if (albuns.length > 0) {
             setLista(albuns)
         }
 
     }, [albuns, posts])
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log(lista);
-    },[lista])
+    }, [lista])
 
     return (
         <div>
-            <h1>Post id: {id}</h1>
+            {/* <h1>Post id: {id}</h1> */}
 
             <h1>Atividades:</h1>
             <div className='buttonBox'>
@@ -81,6 +84,20 @@ export function JsonPlaceholderPostItem() {
                 <button onClick={listarPostagens}>Posts do Usuário</button>
                 <button onClick={listarAlbuns}>Albuns do Usuário</button>
             </div>
+
+            {lista.map((item, index) => (
+
+
+                <Link to={'/RedeSocial/'} key={index}>
+                    <h1>{item.title}</h1>
+                    <p>{item.body}</p>
+                </Link>
+
+
+
+
+
+            ))}
 
         </div>
 

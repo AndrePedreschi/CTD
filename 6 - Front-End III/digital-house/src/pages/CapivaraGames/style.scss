@@ -1,6 +1,197 @@
-
-.capivaraGamesMain{
+.capivaraGamesMain {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+
+   
+    
+    .header {
+        width: 100%;
+        display: flex;
+        //flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            p {
+                font-size: 44px;
+                color: #FF7A00;
+                font-weight: 600;
+            }
+
+            .imgLogo{
+                border-radius: 8px;
+                background-image: url('../../assets/images/capi.png');
+                background-size: 50px 50px;
+                width: 48px;
+                height: 40px;
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+
+        }
+
+        .headerLinks {
+            display: flex;
+            gap: 12px;
+
+            li {
+                list-style: none;
+
+                &:first-child {
+                    a{
+                        color: #FF7A00;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .banner{
+
+        background-image: url('../../assets/images/image\ 2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+        height: 800px;
+        //border: 4px solid #FF7A00;
+        border-radius: 16px;
+
+        .card{
+            margin: 150px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.318);
+            width: 600px;
+            height: 500px;
+
+            .logo {
+                margin: 40px 0;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                p {
+                    font-size: 34px;
+                    color: #FF7A00;
+                    font-weight: 600;
+                }
+                .imgLogo{
+                    border-radius: 8px;
+                    background-image: url('../../assets/images/capi.png');
+                    background-size: 30px;
+                    width: 34px;
+                    height: 30px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+    
+            }
+
+            h1{
+                margin-bottom: 12px;
+                font-weight: 900;
+                font-size: 80px;
+                line-height: 75px;
+                color: #ffffff;
+            }
+            h2{
+                margin-bottom: 64px;
+                font-weight: 900;
+                font-size: 46px;
+                line-height: 36px;
+                color: #FF7A00;
+            }
+            h3{
+                margin-bottom: 12px;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 36px;
+                color: #ffffffdf;
+            }
+            h4{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: #ffffffdf;
+            }
+        }
+
+        .morcego{
+            position: absolute;
+            bottom: 350px;
+            right: 250px;
+            z-index: 1;
+            background-image: url('../../assets/images/🦇.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 300px;
+            height: 300px;
+            transform: translate(0px, 0px);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(-5px, -5px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .abobora{
+            position: absolute;
+            bottom: -70px;
+            right: 1050px;
+            z-index: 1;
+            background-image: url('../../assets/images/🎃.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            transform: rotate();
+            animation: rotate 2.5s ease-in-out infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0turn)
+            }
+            
+            100% {
+                transform: rotate(1turn)
+            }
+        }
+
+
+    }
+
+    section{
+        margin-top: 36px;
+        h1{
+            margin-bottom: 12px;
+        }
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        width: 1146px;
+    }
 }
