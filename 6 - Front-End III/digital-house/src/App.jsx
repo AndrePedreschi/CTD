@@ -18,6 +18,7 @@ import { MainLayout } from "./components/MainLayout"
 import { JsonPlaceholder } from "./pages/JsonPlaceholder";
 import { JsonPlaceholderPostItem } from "./components/RedeSocial/JsonPlaceholderPostItem";
 import { ToDo } from "./pages/ToDo"
+import { VigesimaQuartaAula } from './lessons/VigesimaQuartaAula'
 
 import { ThemeProvider } from "./hooks/useTheme"
 import { Configurations } from "./pages/Configurations"
@@ -101,7 +102,11 @@ function App() {
         {
           path: '/to-do',
           element: <ToDo />
-        }
+        },
+        {
+          path: '/vigesima-quarta-aula',
+          element: <VigesimaQuartaAula />
+        },
       ]
     },
   ]);

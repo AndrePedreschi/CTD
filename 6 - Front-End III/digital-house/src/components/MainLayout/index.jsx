@@ -65,6 +65,10 @@ export function MainLayout() {
             uri: `/DecimaQuintaAula/${params15[1].id}`,
             name: 'Reportagem 2',
         },
+        {
+            uri: "/vigesima-quarta-aula",
+            name: "Vigesima Quarta Aula",
+        },
     ]
 
     const listaTelas = [
