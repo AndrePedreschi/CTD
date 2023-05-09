@@ -1,0 +1,15 @@
+.header-section{
+    width: 100%;
+    height: 6.125rem;
+    background-color: #512DA8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    >p{
+        width: fit-content;
+        color: #ffffff;
+        font-size: 2.5rem;
+    }
+}

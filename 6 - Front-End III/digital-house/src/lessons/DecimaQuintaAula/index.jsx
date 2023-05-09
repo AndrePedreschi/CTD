@@ -43,9 +43,9 @@ export function DecimaQuintaAula() {
 
     useEffect(() => {
 
-        if(cep.length>8){
+        if(cep.length>9){
             setCep(
-                cep.slice(0,8)
+                cep.slice(0,9)
             )
         }
 
@@ -53,6 +53,7 @@ export function DecimaQuintaAula() {
 
         if (cep.length == 8) {
             let cepReconstruido = `${cep.slice(0, 5)}-${cep.slice(5)}`
+            setCep(cepReconstruido)
             if (locations.filter(item => item.cep == cepReconstruido).length > 0) {
                 alert("CEP já cadastrado")
                 setErroForm(false)
@@ -99,7 +100,7 @@ export function DecimaQuintaAula() {
                 <div>
                     <label>Cep</label>
                     <input
-                        type="number"
+                        type="text"
                         value={cep}
                         aria-label='cep'
                         onChange={event => setCep(event.target.value)}
