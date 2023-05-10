@@ -1,0 +1,15 @@
+.home-section {
+padding: 2rem 0;
+
+    .products {
+        width: 1700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-items: center;
+    }
+
+}

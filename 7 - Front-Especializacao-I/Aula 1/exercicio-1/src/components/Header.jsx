@@ -1,9 +1,10 @@
 import "./Header.scss"
+import { Link } from "react-router-dom";
 
 export function Header(){
     return(
         <section className="header-section">
-            <p>Shop Products</p>
+            <Link to={`home`} className="link-style">Shop Products</Link>
         </section>
     )
 }
